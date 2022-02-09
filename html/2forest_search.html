@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Directory Theme by Bootstrapious</title>
+    <title>Forest_search</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
@@ -43,6 +43,7 @@
                 <!-- 필터 -->
                 <form action="#">
                     <div class="row">
+                        <!-- 검색 -->
                         <div class="col-xl-6 col-md-6 mb-4">
                             <label class="form-label" for="form_search">검색</label>
                             <div class="input-label-absolute input-label-absolute-right">
@@ -50,6 +51,7 @@
                                 <input class="form-control pe-4" type="search" name="search" placeholder="휴양림 이름을 입력해주세요." id="form_search">
                             </div>
                         </div>
+                        <!-- 필터 드롭박스 -->
                         <div class="col-xl-6 col-md-6 mb-4">
                             <label class="form-label" for="form_neighbourhood">지역선택</label>
                             <select class="selectpicker form-control" name="neighbourhood" id="form_neighbourhood" placeholder="지역 선택" data-style="btn-selectpicker">
@@ -62,6 +64,7 @@
                                 <option value="neighbourhood_5">충정도</option>
                             </select>
                         </div>
+                        <!-- 필터 체크박스1 -->
                         <div class="col-12 mb-4">
                             <label class="form-label">운영주체</label>
                             <ul class="list-inline mb-0">
@@ -85,6 +88,7 @@
                                 </li>
                             </ul>
                         </div>
+                        <!-- 필터 체크박스2 -->
                         <div class="col-12 pb-4">
                             <div>
                                 <div class="row">
@@ -151,39 +155,84 @@
                     <div>
                         <label class="form-label me-2" for="form_sort">Sort By</label>
                         <select class="selectpicker" name="sort" id="form_sort" data-style="btn-selectpicker" title="">
-                            <option value="sortBy_0">인기순   </option>
-                            <option value="sortBy_1">가나다순   </option>
+                            <option value="sortBy_0">인기순</option>
+                            <option value="sortBy_1">가나다순</option>
                         </select>
                     </div>
                 </div>
+                <!-- 휴양림1 -->
                 <div>
-                    <!-- venue item-->
                     <div class="mb-5 hover-animate" data-marker-id="59c0c8e33b1527bfe2abaf92">
-                        <div class="card h-100 border-0 shadow">
-                            <div class="card-img-top overflow-hidden dark-overlay bg-cover" style="background-image: url(img/photo/restaurant-1430931071372-38127bd472b8.jpg); min-height: 200px;">
-                                <a class="tile-link" href="detail.html"></a>
-                                <div class="card-img-overlay-bottom z-index-20">
-                                    <h4 class="text-white text-shadow">Blue Hill</h4>
-                                    <p class="mb-2 text-xs"><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-gray-300">                    </i>
-                                    </p>
+                        <div class="p-4 card h-100 border-0 shadow">
+                            <div class="d-flex">
+                                <div class="col-3">
+                                    <p> <span class="text-muted text-uppercase text-sm">산림청</span><br><strong class="text-lg">청태산휴양림</strong></p>
+                                    <img class="avatar avatar-lg" src="img\logo\logo_image.jpg" alt="청태산">
                                 </div>
-                                <div class="card-img-overlay-top d-flex justify-content-between align-items-center">
-                                    <div class="badge badge-transparent badge-pill px-3 py-2">Restaurants</div>
-                                    <a class="card-fav-icon position-relative z-index-40" href="javascript: void();">
-                                        <svg class="svg-icon text-white">
-                                            <use xlink:href="#heart-1"> </use>
-                                        </svg></a>
+                                <div class="col-7 mt-3">
+                                    <table class="text-sm col-12 mb-3">
+                                        <tr>
+                                            <td style="width: 100px;">이용시간</td>
+                                            <td>[입/퇴실 시간] 15:00 ~ 11:00</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 100px;">인원</td>
+                                            <td>[최대] 1500명</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 100px;">시설</td>
+                                            <td>[객실]44개 / [야영장] 26개</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 100px;">편의시설</td>
+                                            <td>레포츠시설,야외 물놀이장,바비큐</td>
+                                        </tr>
+                                    </table>
+                                    <a href="https://www.foresttrip.go.kr/indvz/main.do?hmpgId=0106">홈페이지 바로가기</a></p>
                                 </div>
-                            </div>
-                            <div class="card-body">
-                                <p class="text-sm text-muted mb-3"> Cupidatat excepteur non dolore laborum et quis nostrud veniam dolore deserunt. Pariatur dolore ut in elit id nulla. Irur...</p>
-                                <p class="text-sm text-muted text-uppercase mb-1">By <a href="#" class="text-dark">Matt Damon</a></p>
-                                <p class="text-sm mb-0"><a class="me-1" href="#">Restaurant,</a><a class="me-1" href="#">Contemporary</a>
-                                </p>
+                                <div class="col-2 mt-5">
+                                    <img class="avatar avatar-lg p-1 flex-shrink-0 me-4" src="img\logo\logo_name.png" alt="청태산">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- 휴양림1 -->
+                <div>
+                    <div class="mb-5 hover-animate" data-marker-id="59c0c8e33b1527bfe2abaf92">
+                        <div class="p-4 card h-100 border-0 shadow">
+                            <div class="d-flex"><img class="avatar avatar-lg p-1 flex-shrink-0 me-4 mt-5" src="img\logo\logo_image.jpg" alt="청태산">
+                                <div class="col-8">
+                                    <p> <span class="text-muted text-uppercase text-sm">산림청</span><br><strong class="text-lg">청태산휴양림</strong></p>
+                                    <table class="text-sm col-12 mb-3">
+                                        <tr>
+                                            <td style="width: 100px;">이용시간</td>
+                                            <td>[입/퇴실 시간] 15:00 ~ 11:00</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 100px;">인원</td>
+                                            <td>[최대] 1500명</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 100px;">시설</td>
+                                            <td>[객실]44개 / [야영장] 26개</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 100px;">편의시설</td>
+                                            <td>레포츠시설,야외 물놀이장,바비큐</td>
+                                        </tr>
+                                    </table>
+                                    <a href="https://www.foresttrip.go.kr/indvz/main.do?hmpgId=0106">홈페이지 바로가기</a></p>
+                                    <a href="2forest_detail.html">예약하기</a></p>
+                                </div>
+                                <div class="col-2 mt-5">
+                                    <img class="avatar avatar-lg p-1 flex-shrink-0 me-4" src="img\logo\logo_name.png" alt="청태산">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Pagination -->
                 <nav aria-label="Page navigation example">
                     <ul class="pagination pagination-template d-flex justify-content-center">
