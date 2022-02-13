@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Directory Theme by Bootstrapious</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Price Slider Stylesheets -->
+    <link rel="stylesheet" href="vendor/nouislider/nouislider.css">
+    <!-- Google fonts - Playfair Display-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700">
+    <!-- Google fonts - Poppins-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i,700">
+    <!-- swiper-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
+    <!-- Magnigic Popup-->
+    <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/favicon.png">
+    <!-- Tweaks for older IEs-->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body style="padding-top: 72px;">
+    <header class="header">
+        <!-- Navbar-->
+        <nav class="navbar navbar-expand-lg fixed-top shadow navbar-light bg-white">
+            <div class="container">
+                <!-- "container-fluid" -> container로 변경 -->
+                <div class="d-flex align-items-center">
+                    <a class="navbar-brand py-1" href="index.html">
+                        <img src="img/logo/logo_name.png" alt="Directory logo" class="w-6rem">
+                    </a>
+                </div>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+                <!-- Navbar Collapse -->
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <form class="form-inline mt-4 mb-2 d-sm-none" action="#" id="searchcollapsed">
+                        <div class="input-label-absolute input-label-absolute-left w-100">
+                            <label class="label-absolute" for="searchcollapsed_search"><i class="fa fa-search"></i><span class="sr-only">What are you looking for?</span></label>
+                            <input class="form-control form-control-sm border-0 shadow-0 bg-gray-200" id="searchcollapsed_search" placeholder="Search" aria-label="Search" type="search">
+                        </div>
+                    </form>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link" id="docsDropdownMenuLink" href="index.html" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">산림</a>
+                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="docsDropdownMenuLink">
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle " id="docsDropdownMenuLink" href="index.html" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">둘레길/자전거길</a>
+                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="docsDropdownMenuLink">
+                                <a class="dropdown-item" href="docs/docs-introduction.html">둘레길 </a>
+                                <a class="dropdown-item" href="docs/docs-directory-structure.html">자전거길 </a>
+                            </div>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link  " id="docsDropdownMenuLink" href="index.html" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">휴양림</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle " id="docsDropdownMenuLink" href="index.html" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">커뮤니티</a>
+                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="docsDropdownMenuLink">
+                                <a class="dropdown-item" href="docs/docs-introduction.html">방문후기 </a>
+                                <a class="dropdown-item" href="docs/docs-directory-structure.html">자유게시판</a>
+                                <a class="dropdown-item" href="docs/docs-gulp.html">1:1문의</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="login.html">Sign in</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="signup.html">Sign up</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- /Navbar -->
+    </header>
+    <section class="d-flex align-items-center dark-overlay bg-cover" style="background-image: url(img/breadcrumbs_img.jpg);">
+        <div class="container py-4 py-lg-6 text-white overlay-content text-center">
+            <h1 class="display-5 fw-bold text-shadow">휴양림 예약</h1>
+            <p class="text-lg text-shadow">Home > 휴양림 > 휴양림 예약</p>
+        </div>
+    </section>
+
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <h1 class="h2 mb-5"> 이용안내 및 주의사항<span class="text-muted float-end">Step 1</span> </h1>
+                    <div class="text-block">
+                    </div>
+                    <div class="text-block">
+                        <h5 class="mb-4">일정 정보</h5>
+                        <div class="row mb-3">
+                            <div class="col-md-6 d-flex align-items-center mb-3 mb-md-0">
+                                <div class="date-tile me-3">
+                                    <div class="text-uppercase"> <span class="text-sm">Apr</span><br><strong class="text-lg">17</strong></div>
+                                </div>
+                                <p class="text-sm mb-0">Wednesday check-in<br>3PM - 7PM</p>
+                            </div>
+                            <div class="col-md-6 d-flex align-items-center">
+                                <div class="date-tile me-3">
+                                    <div class="text-uppercase"> <span class="text-sm">Apr</span><br><strong class="text-lg">18</strong></div>
+                                </div>
+                                <p class="text-sm mb-0">Thursday check-out<br>11AM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-block">
+                        <h5 class="mb-4">이용안내</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div><span class="">★해당 객실은 실버(만65세 이상)전용 우선예약 객실입니다.
+                                         매월 4일~8일까지 실버 고객으로 등록된 회원 대상으로 우선예약을 받은 후, 잔여 객실에 한해서 매월 15일 09:00 에 숲나들e 전체 회원에게 예약이 오픈됩니다★
+                                        </span></div>
+                                </div>
+                            </li>
+                            <li class="mb-2">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div><span class="">
+                                        화장실, 냉장고(225ℓ),  씽크대, 인덕션, 식탁, 주방기구, 침구, 전기밥솥(6인분), TV(21);※ 에어컨(유료)이 준비되어 있습니다. (1일 기준 2,000원-현장결제/인터넷선결제 모두 가능)</span></div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="text-block">
+                        <h5 class="mb-4">주의 사항</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <div class="d-flex align-items-center mb-3">
+
+                                    <div><span class="">연중 바베큐 이용 불가</span></div>
+                                </div>
+                            </li>
+                            <li class="mb-2">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div><span class="">애완동물 이나 혐오동물은 동반(입장 및 입실) 하실 수 없습니다</span></div>
+                                </div>
+                            </li>
+                            <li class="mb-2">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div><span class="">기준인원 초과 시 입실불가입니다.</span></div>
+                                </div>
+                            </li>
+                            <li class="mb-2">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div><span class="">입실시간을 준수하여 주시기 바랍니다.(입실시간 이외에는 입실이 거부될 수 있습니다.)</span></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="text-block">
+                        <h5 class="mb-4">환불 규정</h5>
+
+                        <p class="0" style="margin-bottom: 11.3pt; "><span style="font-family: 나눔고딕; font-size: 12pt; ">신용카드 </span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 12pt; ">: </span>
+                            <span style="font-family: 나눔고딕; font-size: 12pt; ">결제 취소 시 카드사별로 차이가 있어 </span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 12pt; ">3</span>
+                            <span style="font-family: 나눔고딕; font-size: 12pt; ">일</span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 12pt; ">(</span>
+                            <span style="font-family: 나눔고딕; font-size: 12pt; ">공휴일 제외</span>
+                            <span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 12pt; ">) </span><span style="font-family: 나눔고딕; font-size: 12pt; ">이내 자동 취소 처리되므로 카드 사용 내역을 확인하시기 바랍니다</span>
+                            <span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 12pt; ">.</span><br> <span style="font-family: 나눔고딕; font-size: 12pt; ">단</span>
+                            <span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 12pt; ">, </span>
+                            <span style="font-family: 나눔고딕; font-size: 12pt; ">체크카드 취소 시 환불은 은행별로 다소 차이가 있으니 해당 은행에 문의하시기 바랍니다</span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 12pt; ">.</span><br> <span style="font-family: 나눔고딕; font-size: 12pt; ">계좌 이체 </span>
+                            <span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 12pt; ">: </span>
+                            <span style="font-family: 나눔고딕; font-size: 12pt; ">환불 정보에 입력된 계좌로 </span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 12pt; ">3</span>
+                            <span style="font-family: 나눔고딕; font-size: 12pt; ">일</span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 12pt; ">(</span>
+                            <span style="font-family: 나눔고딕; font-size: 12pt; ">공휴일 제외</span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 12pt; ">) </span>
+                            <span style="font-family: 나눔고딕; font-size: 12pt; ">이내 입금됩니다</span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 12pt; ">.</span><br> <span style="font-family: 나눔고딕; font-size: 12pt; ">가상 계좌 </span>
+                            <span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 12pt; ">: </span>
+                            <span style="font-family: 나눔고딕; font-size: 12pt; ">환불 정보에 입력된 계좌로 </span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 12pt; ">3</span>
+                            <span style="font-family: 나눔고딕; font-size: 12pt; ">일</span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 12pt; ">(</span>
+                            <span style="font-family: 나눔고딕; font-size: 12pt; ">공휴일 제외</span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 12pt; ">) </span>
+                            <span style="font-family: 나눔고딕; font-size: 12pt; ">이내 입금됩니다</span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 12pt; ">.</span><br> <span style="font-family: 나눔고딕; font-size: 12pt; ">환불 가능 은행 </span>
+                            <span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 12pt; ">: </span>
+                            <span style="font-family: 나눔고딕; font-size: 12pt; ">경남</span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 12pt; ">, </span>
+                            <span style="font-family: 나눔고딕; font-size: 12pt; ">광주</span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 12pt; ">, </span>
+                            <span style="font-family: 나눔고딕; font-size: 12pt; ">국민</span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 12pt; ">, </span>
+                            <span style="font-family: 나눔고딕; font-size: 12pt; ">기업</span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 12pt; ">, </span>
+                            <span style="font-family: 나눔고딕; font-size: 12pt; ">농협</span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 12pt; ">(</span>
+                            <span style="font-family: 나눔고딕; font-size: 12pt; ">중앙회</span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 12pt; ">, </span>
+                            <span style="font-family: 나눔고딕; font-size: 12pt; ">지역 조합</span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 12pt; ">), </span>
+                            <span style="font-family: 나눔고딕; font-size: 12pt; ">대구</span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 12pt; ">, </span>
+                            <span style="font-family: 나눔고딕; font-size: 12pt; ">부산</span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 12pt; ">, </span>
+                            <span style="font-family: 나눔고딕; font-size: 12pt; ">산업</span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 12pt; ">, </span>
+                            <span style="font-family: 나눔고딕; font-size: 12pt; ">상호저축</span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 12pt; ">, </span>
+                            <span style="font-family: 나눔고딕; font-size: 12pt; ">새마을금고</span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 12pt; ">, </span>
+                            <span style="font-family: 나눔고딕; font-size: 12pt; ">수협</span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 12pt; ">(</span>
+                            <span style="font-family: 나눔고딕; font-size: 12pt; ">중앙회</span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 12pt; ">, </span>
+                            <span style="font-family: 나눔고딕; font-size: 12pt; ">단위 조합</span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 12pt; ">), </span>
+                            <span style="font-family: 나눔고딕; font-size: 12pt; ">신용협동조합중앙회</span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 12pt; ">, </span>
+                            <span style="font-family: 나눔고딕; font-size: 12pt; ">신한</span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 12pt; ">, KEB</span>
+                            <span style="font-family: 나눔고딕; font-size: 12pt; ">하나</span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 12pt; ">, </span>
+                            <span style="font-family: 나눔고딕; font-size: 12pt; ">우리</span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 12pt; ">, </span>
+                            <span style="font-family: 나눔고딕; font-size: 12pt; ">우체국</span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 12pt; ">, </span>
+                            <span style="font-family: 나눔고딕; font-size: 12pt; ">전북</span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 12pt; ">, </span>
+                            <span style="font-family: 나눔고딕; font-size: 12pt; ">제일</span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 12pt; ">, </span>
+                            <span style="font-family: 나눔고딕; font-size: 12pt; ">제주</span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 12pt; ">, </span>
+                            <span style="font-family: 나눔고딕; font-size: 12pt; ">홍콩상하이</span><br> <span style="font-family: 나눔고딕; font-size: 12pt; ">예약을 취소하거나 변경한 경우 </span>
+                            <span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 12pt; ">3</span><span style="font-family: 나눔고딕; font-size: 12pt; ">일 이내</span>
+                            <span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 12pt; ">(</span><span style="font-family: 나눔고딕; font-size: 12pt; ">공휴일 제외</span>
+                            <span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 12pt; ">)</span><span style="font-family: 나눔고딕; font-size: 12pt; ">에 환불됩니다</span>
+                            <span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 12pt; ">(</span><span style="font-family: 나눔고딕; font-size: 12pt; ">단</span>
+                            <span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 12pt; ">, </span><span style="font-family: 나눔고딕; font-size: 12pt; ">환불에 따른 금융기관의 수수료는 환불금에서 공제한 후 입금됩니다</span>
+                            <span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 12pt; ">).</span><br> <span style="font-family: 나눔고딕; font-size: 12pt; ">자연휴양림 이용자 입장 후 </span>
+                            <span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 12pt; ">30</span><span style="font-family: 나눔고딕; font-size: 12pt; ">분 이내에 퇴장해 납입한 입장료 및 시설 사용료 환불을 요구할 경우 즉시 반환해 드립니다</span>
+                            <span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 12pt; ">.</span><br> <span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 11pt; ">* </span>
+                            <span style="font-family: 나눔고딕; font-size: 11pt; ">관리 부실 또는 착오 등 관리 기관의 귀책사유로 예약 시설을 이용하지 못할 경우 </span>
+                            <span style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 11pt; ">「</span><span style="font-family: 나눔고딕; font-size: 11pt; ">소비자기본법</span>
+                            <span style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 11pt; ">」</span><span style="font-family: 나눔고딕; font-size: 11pt; ">제</span>
+                            <span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 11pt; ">12</span><span style="font-family: 나눔고딕; font-size: 11pt; ">조 및 소비자 피해 보상 규정에 의거 다음과 같이 배상합니다</span>
+                            <span lang="EN-US" style="letter-spacing: 0pt; font-family: 나눔고딕; font-size: 11pt; ">.</span>
+                        </p>
+                        <table class="__se_tbl_ext" style="border: currentColor; border-image: none; border-collapse: collapse; table-layout: fixed; ">
+                            <tbody>
+                                <tr>
+                                    <td valign="middle" style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 339.02pt; height: 17.25pt;" colspan="2">
+                                        <p class="1" style="margin: 0pt; text-align: center; color: rgb(0, 0, 0); line-height: 100%; text-indent: 0pt; letter-spacing: 0pt; font-size: 12pt; vertical-align: middle; -ms-layout-grid-mode: both; "><span style="font-family: 한양신명조; font-size: 10pt; font-weight: bold; ">성수기 주중</span></p>
+                                    </td>
+                                    <td valign="middle" style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 332.31pt; height: 17.25pt;" colspan="2">
+                                        <p class="2" style="margin: 0pt; text-align: center; color: rgb(0, 0, 0); line-height: 100%; text-indent: 0pt; letter-spacing: 0pt; font-size: 12pt; vertical-align: middle; -ms-layout-grid-mode: both; "><span style="font-family: 한양신명조; font-size: 10pt; font-weight: bold; ">성수기 주말</span></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td valign="middle" style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 226.28pt; height: 13.5pt;">
+                                        <p class="3" style="margin: 0pt; text-align: center; color: rgb(0, 0, 0); line-height: 100%; text-indent: 0pt; letter-spacing: 0pt; font-size: 12pt; vertical-align: middle; -ms-layout-grid-mode: both; "><span style="font-family: 한양신명조; font-size: 10pt; ">사용예정일 </span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 한양신명조; font-size: 10pt;">10</span>
+                                            <span style="font-family: 한양신명조; font-size: 10pt; ">일 전까지 취소</span>
+                                        </p>
+                                    </td>
+                                    <td valign="middle" style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 112.74pt; height: 13.5pt;">
+                                        <p class="4" style="margin: 0pt; text-align: center; color: rgb(0, 0, 0); line-height: 100%; text-indent: 0pt; letter-spacing: 0pt; font-size: 12pt; vertical-align: middle; -ms-layout-grid-mode: both; "><span style="font-family: 한양신명조; font-size: 10pt; ">계약금 환급</span></p>
+                                    </td>
+                                    <td valign="middle" style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 201.42pt; height: 13.5pt;">
+                                        <p class="3" style="margin: 0pt; text-align: center; color: rgb(0, 0, 0); line-height: 100%; text-indent: 0pt; letter-spacing: 0pt; font-size: 12pt; vertical-align: middle; -ms-layout-grid-mode: both; "><span style="font-family: 한양신명조; font-size: 10pt; ">사용예정일 </span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 한양신명조; font-size: 10pt;">10</span>
+                                            <span style="font-family: 한양신명조; font-size: 10pt; ">일 전까지 취소</span>
+                                        </p>
+                                    </td>
+                                    <td valign="middle" style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 130.89pt; height: 13.5pt;">
+                                        <p class="4" style="margin: 0pt; text-align: center; color: rgb(0, 0, 0); line-height: 100%; text-indent: 0pt; letter-spacing: 0pt; font-size: 12pt; vertical-align: middle; -ms-layout-grid-mode: both; "><span style="font-family: 한양신명조; font-size: 10pt; ">계약금 환급</span></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td valign="middle" style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 226.28pt; height: 27pt;">
+                                        <p class="3" style="margin: 0pt; text-align: center; color: rgb(0, 0, 0); line-height: 100%; text-indent: 0pt; letter-spacing: 0pt; font-size: 12pt; vertical-align: middle; -ms-layout-grid-mode: both; "><span style="font-family: 한양신명조; font-size: 10pt; ">사용예정일 </span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 한양신명조; font-size: 10pt;">7</span>
+                                            <span style="font-family: 한양신명조; font-size: 10pt; ">일 전까지 취소</span>
+                                        </p>
+                                    </td>
+                                    <td valign="middle" style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 112.74pt; height: 27pt;">
+                                        <p class="4" style="margin: 0pt; text-align: center; color: rgb(0, 0, 0); line-height: 100%; text-indent: 0pt; letter-spacing: 0pt; font-size: 12pt; vertical-align: middle; -ms-layout-grid-mode: both; "><span style="font-family: 한양신명조; font-size: 10pt; ">계약금 환급 및 총요금의 </span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 한양신명조; font-size: 10pt;">10% </span>
+                                            <span style="font-family: 한양신명조; font-size: 10pt; ">배상</span>
+                                        </p>
+                                    </td>
+                                    <td valign="middle" style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 201.42pt; height: 27pt;">
+                                        <p class="3" style="margin: 0pt; text-align: center; color: rgb(0, 0, 0); line-height: 100%; text-indent: 0pt; letter-spacing: 0pt; font-size: 12pt; vertical-align: middle; -ms-layout-grid-mode: both; "><span style="font-family: 한양신명조; font-size: 10pt; ">사용예정일 </span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 한양신명조; font-size: 10pt;">7</span>
+                                            <span style="font-family: 한양신명조; font-size: 10pt; ">일 전까지 취소</span>
+                                        </p>
+                                    </td>
+                                    <td valign="middle" style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 130.89pt; height: 27pt;">
+                                        <p class="4" style="margin: 0pt; text-align: center; color: rgb(0, 0, 0); line-height: 100%; text-indent: 0pt; letter-spacing: 0pt; font-size: 12pt; vertical-align: middle; -ms-layout-grid-mode: both; "><span style="font-family: 한양신명조; font-size: 10pt; ">계약금 환급 및 총요금의 </span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 한양신명조; font-size: 10pt;">20% </span>
+                                            <span style="font-family: 한양신명조; font-size: 10pt; ">배상</span>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td valign="middle" style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 226.28pt; height: 27pt;">
+                                        <p class="3" style="margin: 0pt; text-align: center; color: rgb(0, 0, 0); line-height: 100%; text-indent: 0pt; letter-spacing: 0pt; font-size: 12pt; vertical-align: middle; -ms-layout-grid-mode: both; "><span style="font-family: 한양신명조; font-size: 10pt; ">사용예정일 </span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 한양신명조; font-size: 10pt;">5</span>
+                                            <span style="font-family: 한양신명조; font-size: 10pt; ">일 전까지 취소</span>
+                                        </p>
+                                    </td>
+                                    <td valign="middle" style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 112.74pt; height: 27pt;">
+                                        <p class="4" style="margin: 0pt; text-align: center; color: rgb(0, 0, 0); line-height: 100%; text-indent: 0pt; letter-spacing: 0pt; font-size: 12pt; vertical-align: middle; -ms-layout-grid-mode: both; "><span style="font-family: 한양신명조; font-size: 10pt; ">계약금 환급 및 총요금의 </span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 한양신명조; font-size: 10pt;">30% </span>
+                                            <span style="font-family: 한양신명조; font-size: 10pt; ">배상</span>
+                                        </p>
+                                    </td>
+                                    <td valign="middle" style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 201.42pt; height: 27pt;">
+                                        <p class="3" style="margin: 0pt; text-align: center; color: rgb(0, 0, 0); line-height: 100%; text-indent: 0pt; letter-spacing: 0pt; font-size: 12pt; vertical-align: middle; -ms-layout-grid-mode: both; "><span style="font-family: 한양신명조; font-size: 10pt; ">사용예정일 </span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 한양신명조; font-size: 10pt;">5</span>
+                                            <span style="font-family: 한양신명조; font-size: 10pt; ">일 전까지 취소</span>
+                                        </p>
+                                    </td>
+                                    <td valign="middle" style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 130.89pt; height: 27pt;">
+                                        <p class="4" style="margin: 0pt; text-align: center; color: rgb(0, 0, 0); line-height: 100%; text-indent: 0pt; letter-spacing: 0pt; font-size: 12pt; vertical-align: middle; -ms-layout-grid-mode: both; "><span style="font-family: 한양신명조; font-size: 10pt; ">계약금 환급 및 총요금의 </span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 한양신명조; font-size: 10pt;">40% </span>
+                                            <span style="font-family: 한양신명조; font-size: 10pt; ">배상</span>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td valign="middle" style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 226.28pt; height: 27pt;">
+                                        <p class="3" style="margin: 0pt; text-align: center; color: rgb(0, 0, 0); line-height: 100%; text-indent: 0pt; letter-spacing: 0pt; font-size: 12pt; vertical-align: middle; -ms-layout-grid-mode: both; "><span style="font-family: 한양신명조; font-size: 10pt; ">사용예정일 </span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 한양신명조; font-size: 10pt;">3</span>
+                                            <span style="font-family: 한양신명조; font-size: 10pt; ">일 전까지 취소</span>
+                                        </p>
+                                    </td>
+                                    <td valign="middle" style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 112.74pt; height: 27pt;">
+                                        <p class="4" style="margin: 0pt; text-align: center; color: rgb(0, 0, 0); line-height: 100%; text-indent: 0pt; letter-spacing: 0pt; font-size: 12pt; vertical-align: middle; -ms-layout-grid-mode: both; "><span style="font-family: 한양신명조; font-size: 10pt; ">계약금 환급 및 총요금의 </span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 한양신명조; font-size: 10pt;">50% </span>
+                                            <span style="font-family: 한양신명조; font-size: 10pt; ">배상</span>
+                                        </p>
+                                    </td>
+                                    <td valign="middle" style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 201.42pt; height: 27pt;">
+                                        <p class="3" style="margin: 0pt; text-align: center; color: rgb(0, 0, 0); line-height: 100%; text-indent: 0pt; letter-spacing: 0pt; font-size: 12pt; vertical-align: middle; -ms-layout-grid-mode: both; "><span style="font-family: 한양신명조; font-size: 10pt; ">사용예정일 </span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 한양신명조; font-size: 10pt;">3</span>
+                                            <span style="font-family: 한양신명조; font-size: 10pt; ">일 전까지 취소</span>
+                                        </p>
+                                    </td>
+                                    <td valign="middle" style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 130.89pt; height: 27pt;">
+                                        <p class="4" style="margin: 0pt; text-align: center; color: rgb(0, 0, 0); line-height: 100%; text-indent: 0pt; letter-spacing: 0pt; font-size: 12pt; vertical-align: middle; -ms-layout-grid-mode: both; "><span style="font-family: 한양신명조; font-size: 10pt; ">계약금 환급 및 총요금의 </span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 한양신명조; font-size: 10pt;">60% </span>
+                                            <span style="font-family: 한양신명조; font-size: 10pt; ">배상</span>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td valign="middle" style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 226.28pt; height: 22.82pt;">
+                                        <p class="3" style="margin: 0pt; text-align: center; color: rgb(0, 0, 0); line-height: 100%; text-indent: 0pt; letter-spacing: 0pt; font-size: 12pt; vertical-align: middle; -ms-layout-grid-mode: both; "><span style="font-family: 한양신명조; font-size: 10pt; ">사용예정일 </span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 한양신명조; font-size: 10pt;">1</span>
+                                            <span style="font-family: 한양신명조; font-size: 10pt; ">일 전까지 또는 사용예정일 당일 취소</span>
+                                        </p>
+                                    </td>
+                                    <td valign="middle" style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 112.74pt; height: 22.82pt;">
+                                        <p class="4" style="margin: 0pt; text-align: center; color: rgb(0, 0, 0); line-height: 100%; text-indent: 0pt; letter-spacing: 0pt; font-size: 12pt; vertical-align: middle; -ms-layout-grid-mode: both; "><span style="font-family: 한양신명조; font-size: 10pt; ">손해배상</span></p>
+                                    </td>
+                                    <td valign="middle" style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 201.42pt; height: 22.82pt;">
+                                        <p class="3" style="margin: 0pt; text-align: center; color: rgb(0, 0, 0); line-height: 100%; text-indent: 0pt; letter-spacing: 0pt; font-size: 12pt; vertical-align: middle; -ms-layout-grid-mode: both; "><span style="font-family: 한양신명조; font-size: 10pt; ">사용예정일 </span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 한양신명조; font-size: 10pt;">1</span>
+                                            <span style="font-family: 한양신명조; font-size: 10pt; ">일 전까지 또는 사용예정일 당일 취소</span>
+                                        </p>
+                                    </td>
+                                    <td valign="middle" style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 130.89pt; height: 22.82pt;">
+                                        <p class="4" style="margin: 0pt; text-align: center; color: rgb(0, 0, 0); line-height: 100%; text-indent: 0pt; letter-spacing: 0pt; font-size: 12pt; vertical-align: middle; -ms-layout-grid-mode: both; "><span style="font-family: 한양신명조; font-size: 10pt; ">손해배상</span></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td valign="middle" style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 339.02pt; height: 17.25pt;" colspan="2">
+                                        <p class="5" style="margin: 0pt; text-align: center; color: rgb(0, 0, 0); line-height: 100%; text-indent: 0pt; letter-spacing: 0pt; font-size: 12pt; vertical-align: middle; -ms-layout-grid-mode: both; "><span style="font-family: 한양신명조; font-size: 10pt; font-weight: bold; ">비수기 주중</span></p>
+                                    </td>
+                                    <td valign="middle" style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 332.31pt; height: 17.25pt;" colspan="2">
+                                        <p class="6" style="margin: 0pt; text-align: center; color: rgb(0, 0, 0); line-height: 100%; text-indent: 0pt; letter-spacing: 0pt; font-size: 12pt; vertical-align: middle; -ms-layout-grid-mode: both; "><span style="font-family: 한양신명조; font-size: 10pt; font-weight: bold; ">비수기 주말</span></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td valign="middle" style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 226.28pt; height: 13.5pt;">
+                                        <p class="3" style="margin: 0pt; text-align: center; color: rgb(0, 0, 0); line-height: 100%; text-indent: 0pt; letter-spacing: 0pt; font-size: 12pt; vertical-align: middle; -ms-layout-grid-mode: both; "><span style="font-family: 한양신명조; font-size: 10pt; ">사용예정일 </span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 한양신명조; font-size: 10pt;">2</span>
+                                            <span style="font-family: 한양신명조; font-size: 10pt; ">일 전까지 취소</span>
+                                        </p>
+                                    </td>
+                                    <td valign="middle" style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 112.74pt; height: 13.5pt;">
+                                        <p class="4" style="margin: 0pt; text-align: center; color: rgb(0, 0, 0); line-height: 100%; text-indent: 0pt; letter-spacing: 0pt; font-size: 12pt; vertical-align: middle; -ms-layout-grid-mode: both; "><span style="font-family: 한양신명조; font-size: 10pt; ">계약금 환급</span></p>
+                                    </td>
+                                    <td valign="middle" style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 201.42pt; height: 13.5pt;">
+                                        <p class="3" style="margin: 0pt; text-align: center; color: rgb(0, 0, 0); line-height: 100%; text-indent: 0pt; letter-spacing: 0pt; font-size: 12pt; vertical-align: middle; -ms-layout-grid-mode: both; "><span style="font-family: 한양신명조; font-size: 10pt; ">사용예정일 </span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 한양신명조; font-size: 10pt;">2</span>
+                                            <span style="font-family: 한양신명조; font-size: 10pt; ">일 전까지 취소 </span>
+                                        </p>
+                                    </td>
+                                    <td valign="middle" style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 130.89pt; height: 13.5pt;">
+                                        <p class="4" style="margin: 0pt; text-align: center; color: rgb(0, 0, 0); line-height: 100%; text-indent: 0pt; letter-spacing: 0pt; font-size: 12pt; vertical-align: middle; -ms-layout-grid-mode: both; "><span style="font-family: 한양신명조; font-size: 10pt; ">계약금 환급</span></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td valign="middle" style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 226.28pt; height: 27pt;">
+                                        <p class="3" style="margin: 0pt; text-align: center; color: rgb(0, 0, 0); line-height: 100%; text-indent: 0pt; letter-spacing: 0pt; font-size: 12pt; vertical-align: middle; -ms-layout-grid-mode: both; "><span style="font-family: 한양신명조; font-size: 10pt; ">사용예정일 </span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 한양신명조; font-size: 10pt;">1</span>
+                                            <span style="font-family: 한양신명조; font-size: 10pt; ">일 전까지 취소</span>
+                                        </p>
+                                    </td>
+                                    <td valign="middle" style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 112.74pt; height: 27pt;">
+                                        <p class="4" style="margin: 0pt; text-align: center; color: rgb(0, 0, 0); line-height: 100%; text-indent: 0pt; letter-spacing: 0pt; font-size: 12pt; vertical-align: middle; -ms-layout-grid-mode: both; "><span style="font-family: 한양신명조; font-size: 10pt; ">계약금 환급 및 총요금의 </span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 한양신명조; font-size: 10pt;">10% </span>
+                                            <span style="font-family: 한양신명조; font-size: 10pt; ">배상</span>
+                                        </p>
+                                    </td>
+                                    <td valign="middle" style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 201.42pt; height: 27pt;">
+                                        <p class="3" style="margin: 0pt; text-align: center; color: rgb(0, 0, 0); line-height: 100%; text-indent: 0pt; letter-spacing: 0pt; font-size: 12pt; vertical-align: middle; -ms-layout-grid-mode: both; "><span style="font-family: 한양신명조; font-size: 10pt; ">사용예정일 </span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 한양신명조; font-size: 10pt;">1</span>
+                                            <span style="font-family: 한양신명조; font-size: 10pt; ">일 전까지 취소</span>
+                                        </p>
+                                    </td>
+                                    <td valign="middle" style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 130.89pt; height: 27pt;">
+                                        <p class="4" style="margin: 0pt; text-align: center; color: rgb(0, 0, 0); line-height: 100%; text-indent: 0pt; letter-spacing: 0pt; font-size: 12pt; vertical-align: middle; -ms-layout-grid-mode: both; "><span style="font-family: 한양신명조; font-size: 10pt; ">계약금 환급 및 총요금의 </span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 한양신명조; font-size: 10pt;">20% </span>
+                                            <span style="font-family: 한양신명조; font-size: 10pt; ">배상</span>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td valign="middle" style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 226.28pt; height: 27pt;">
+                                        <p class="3" style="margin: 0pt; text-align: center; color: rgb(0, 0, 0); line-height: 100%; text-indent: 0pt; letter-spacing: 0pt; font-size: 12pt; vertical-align: middle; -ms-layout-grid-mode: both; "><span style="font-family: 한양신명조; font-size: 10pt; ">사용예정일 당일 취소</span></p>
+                                    </td>
+                                    <td valign="middle" style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 112.74pt; height: 27pt;">
+                                        <p class="4" style="margin: 0pt; text-align: center; color: rgb(0, 0, 0); line-height: 100%; text-indent: 0pt; letter-spacing: 0pt; font-size: 12pt; vertical-align: middle; -ms-layout-grid-mode: both; "><span style="font-family: 한양신명조; font-size: 10pt; ">계약금 환급 및 총요금의 </span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 한양신명조; font-size: 10pt;">20% </span>
+                                            <span style="font-family: 한양신명조; font-size: 10pt; ">배상</span>
+                                        </p>
+                                    </td>
+                                    <td valign="middle" style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 201.42pt; height: 27pt;">
+                                        <p class="3" style="margin: 0pt; text-align: center; color: rgb(0, 0, 0); line-height: 100%; text-indent: 0pt; letter-spacing: 0pt; font-size: 12pt; vertical-align: middle; -ms-layout-grid-mode: both; "><span style="font-family: 한양신명조; font-size: 10pt; ">사용예정일 당일 취소</span></p>
+                                    </td>
+                                    <td valign="middle" style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 130.89pt; height: 27pt;">
+                                        <p class="4" style="margin: 0pt; text-align: center; color: rgb(0, 0, 0); line-height: 100%; text-indent: 0pt; letter-spacing: 0pt; font-size: 12pt; vertical-align: middle; -ms-layout-grid-mode: both; "><span style="font-family: 한양신명조; font-size: 10pt; ">계약금 환급 및 총요금의 </span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 한양신명조; font-size: 10pt;">30% </span>
+                                            <span style="font-family: 한양신명조; font-size: 10pt; ">배상</span>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td valign="middle" style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 671.33pt; height: 27pt;" colspan="4">
+                                        <p class="4" style="margin: 0pt; text-align: center; color: rgb(0, 0, 0); line-height: 100%; text-indent: 0pt; letter-spacing: 0pt; font-size: 12pt; vertical-align: middle; -ms-layout-grid-mode: both; "><span style="font-family: 한양신명조; font-size: 10pt; ">기후변화 및 천재지변으로 소비자의 숙박지역 이동 또는 숙박업소 이용이 불가하여 숙박 당일 계약 취소 </span><span lang="EN-US" style="letter-spacing: 0pt; font-family: 한양신명조; font-size: 10pt;">: </span>
+                                            <span style="font-family: 한양신명조; font-size: 10pt; ">계약금 환급</span>
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="row form-block flex-column flex-sm-row">
+                        <div class="col text-center text-sm-start">
+                        </div>
+                        <div class="col text-center text-sm-end"><a class="btn btn-primary px-3" href="3forest-pay.html"> Next step<i class="fa-chevron-right fa ms-2"></i></a></div>
+                    </div>
+                </div>
+                <div class="col-lg-5 ps-xl-5">
+                    <div class="card border-0 shadow sticky-top">
+                        <div class="card-body p-4">
+                            <div class="text-block pb-3">
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <h6> <a class="text-reset" href="detail-rooms.html">석모도 자영휴양림 </a></h6>
+                                        <p class="text-muted text-sm mb-0">다람쥐방</p>
+                                        <div class="mt-n1"><i class="fa fa-xs fa-star text-primary"></i><i class="fa fa-xs fa-star text-primary"></i><i class="fa fa-xs fa-star text-primary"></i><i class="fa fa-xs fa-star text-primary"></i><i class="fa fa-xs fa-star text-gray-200"></i>
+                                        </div>
+                                    </div>
+                                    <a class="flex-shrink-0" href="detail-rooms.html"><img class="ms-3 rounded" src="img/photo/photo-1512917774080-9991f1c4c750.jpg" alt="" width="100"></a>
+                                </div>
+                            </div>
+                            <div class="text-block py-3">
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-3"><i class="fas fa-users fa-fw text-muted me-2"></i>3 guests</li>
+                                    <li class="mb-0"><i class="far fa-calendar fa-fw text-muted me-2"></i>Apr 17, 2019 <i class="fas fa-arrow-right fa-fw text-muted mx-3"></i>Apr 18, 2019</li>
+                                </ul>
+                            </div>
+                            <div class="text-block pt-3 pb-0">
+                                <table class="w-100">
+                                    <tbody>
+                                        <tr>
+                                            <th class="fw-normal py-2">과세금액</th>
+                                            <td class="text-end py-2">₩135,000</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="fw-normal pt-2 pb-3">부가세</th>
+                                            <td class="text-end pt-2 pb-3">₩15,000</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr class="border-top">
+                                            <th class="pt-3">결제금액</th>
+                                            <td class="fw-bold text-end pt-3">₩150,000</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+            <!-- row -->
+        </div>
+        <!-- container -->
+    </section>
+
+    <!-- Footer-->
+    <footer class="position-relative z-index-10 d-print-none">
+        <!-- Main block - menus, subscribe form-->
+        <div class="py-5 bg-light text-muted">
+            <div class="container">
+                <div class="mb-6 mb-lg-0">
+                    <ul class="list-unstyled">
+                        <li class="my-3">개인정보처리방침 | 이용약관 | 인재채용문의</li>
+                        <li class="my-3">대표번호 : 1544-9970 팩스번호 : 1544-9970</li>
+                        <li class="my-3">(01010)서울특별시 강남구 테헤란로 14길 6 남도빌딩 2층, 3층, 4층</li>
+                    </ul>
+                </div>
+                <!--
+              <div class="mb-5 mb-lg-0">
+                <ul class="list-inline">
+                  <li class="list-inline-item"><a class="text-muted text-primary-hover" href="#" target="_blank" title="twitter"><i class="fab fa-twitter"></i></a></li>
+                  <li class="list-inline-item"><a class="text-muted text-primary-hover" href="#" target="_blank" title="facebook"><i class="fab fa-facebook"></i></a></li>
+                  <li class="list-inline-item"><a class="text-muted text-primary-hover" href="#" target="_blank" title="instagram"><i class="fab fa-instagram"></i></a></li>
+                  <li class="list-inline-item"><a class="text-muted text-primary-hover" href="#" target="_blank" title="pinterest"><i class="fab fa-pinterest"></i></a></li>
+                  <li class="list-inline-item"><a class="text-muted text-primary-hover" href="#" target="_blank" title="vimeo"><i class="fab fa-vimeo"></i></a></li>
+                </ul>
+              </div>
+              -->
+            </div>
+        </div>
+        <!-- Copyright section of the footer-->
+        <div class="py-4 fw-light bg-gray-800 text-gray-300">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="text-sm mb-md-0">&copy; 2021, Your company. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-inline mb-0 mt-2 mt-md-0 text-center text-md-end">
+                            <li class="list-inline-item"><img class="w-2rem" src="img/visa.svg" alt="..."></li>
+                            <li class="list-inline-item"><img class="w-2rem" src="img/mastercard.svg" alt="..."></li>
+                            <li class="list-inline-item"><img class="w-2rem" src="img/paypal.svg" alt="..."></li>
+                            <li class="list-inline-item"><img class="w-2rem" src="img/western-union.svg" alt="..."></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- JavaScript files-->
+    <script>
+        // ------------------------------------------------------- //
+        //   Inject SVG Sprite - 
+        //   see more here 
+        //   https://css-tricks.com/ajaxing-svg-sprite/
+        // ------------------------------------------------------ //
+        function injectSvgSprite(path) {
+
+            var ajax = new XMLHttpRequest();
+            ajax.open("GET", path, true);
+            ajax.send();
+            ajax.onload = function(e) {
+                var div = document.createElement("div");
+                div.className = 'd-none';
+                div.innerHTML = ajax.responseText;
+                document.body.insertBefore(div, document.body.childNodes[0]);
+            }
+        }
+        // to avoid CORS issues when viewing using file:// protocol, using the demo URL for the SVG sprite
+        // use your own URL in production, please :)
+        // https://demo.bootstrapious.com/directory/1-0/icons/orion-svg-sprite.svg
+        //- injectSvgSprite('${path}icons/orion-svg-sprite.svg'); 
+        injectSvgSprite('https://demo.bootstrapious.com/directory/1-4/icons/orion-svg-sprite.svg');
+    </script>
+    <!-- jQuery-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Bootstrap JS bundle - Bootstrap + PopperJS-->
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Magnific Popup - Lightbox for the gallery-->
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <!-- Smooth scroll-->
+    <script src="vendor/smooth-scroll/smooth-scroll.polyfills.min.js"></script>
+    <!-- Bootstrap Select-->
+    <script src="vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <!-- Object Fit Images - Fallback for browsers that don't support object-fit-->
+    <script src="vendor/object-fit-images/ofi.min.js"></script>
+    <!-- Swiper Carousel                       -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+    <script>
+        var basePath = ''
+    </script>
+    <!-- Main Theme JS file    -->
+    <script src="js/theme.js"></script>
+</body>
+
+</html>

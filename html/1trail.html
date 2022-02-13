@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Directory Theme by Bootstrapious</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Price Slider Stylesheets -->
+    <link rel="stylesheet" href="vendor/nouislider/nouislider.css">
+    <!-- Google fonts - Playfair Display-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700">
+    <!-- Google fonts - Poppins-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i,700">
+    <!-- swiper-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
+    <!-- Magnigic Popup-->
+    <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css">
+    <!-- Leaflet Maps-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/favicon.png">
+    <!-- Tweaks for older IEs-->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body style="padding-top: 72px;">
+    <header class="header header-absolute">
+
+    </header>
+
+    <section class="d-flex align-items-center dark-overlay bg-cover" style="background-image: url(img/breadcrumbs_img.jpg);">
+        <div class="container py-6 py-lg-6 text-white overlay-content text-center">
+            <div class="row">
+                <div class="col-xl-10 mx-auto">
+                    <h1 class="display-5 font-weight-bold text-shadow">등산로</h1>
+                    <p class="text-lg text-shadow">홈 > 산/둘레길/등산로 > 등산로</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-xl-5 px-4 pb-4 ps-xl-5 pe-xl-5">
+                    <div class="text-block">
+                        <div class="col-xl-7 col-md-4 mb-4">
+                            <div class="input-label-absolute input-label-absolute-right">
+                                <div class="label-absolute"><i class="fa fa-search"></i></div>
+                                <input class="form-control pe-4" type="search" name="search" placeholder="등산로명을 입력해주세요" id="form_search">
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center flex-column flex-md-row mb-4">
+                            <div class="me-3">
+                                <p class="mb-3 mb-md-0"><strong>12</strong> results found</p>
+                            </div>
+                            <div>
+                                <label class="form-label me-2" for="form_sort">Sort by</label>
+                                <select class="selectpicker" name="sort" id="form_sort" data-style="btn-selectpicker" title="">
+                                    <option value="sortBy_0">오름차순  </option>
+                                    <option value="sortBy_1">리뷰 많은순   </option>
+                                    <option value="sortBy_2">내림차순   </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-block">
+                        <div class="row">
+                            <div class="d-flex d-block d-sm-flex">
+                                <div class="text-md-center flex-shrink-0 me-2 me-xl-5">
+                                    <a href="#">
+                                        <img class="d-block avatar avatar-xl p-2 mb-2 rounded-5" src="img/top100/마니산2.jpg">
+                                    </a>
+                                    <span class="text-uppercase text-muted text-sm"></span>
+                                </div>
+                                <div>
+                                    <h5 class="mt-2 -1">금평리 구간</h5><br>
+                                    <p class="text-muted">전라북도 남원시, 전라남도 구례군, 경상남도 하동군ㆍ산청군ㆍ함양군</p>
+                                    <button class="btn btn-outline-primary" style="float: right;" type="button" data-bs-toggle="collapse" data-bs-target="#leaveReview" aria-expanded="false" aria-controls="leaveReview">리뷰</button>
+                                    <p class="text-muted text-sm">리뷰 : 21개</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapse mt-4" id="leaveReview">
+                            <form class="form" id="contact-form" method="get" action="#">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="mb-4">
+                                            <label class="form-label" for="rating">Your rating *</label>
+                                            <select class="form-select focus-shadow-0" name="rating" id="rating">
+                                                  <option value="5">&#9733;&#9733;&#9733;&#9733;&#9733; (5/5)</option>
+                                                  <option value="4">&#9733;&#9733;&#9733;&#9733;&#9734; (4/5)</option>
+                                                  <option value="3">&#9733;&#9733;&#9733;&#9734;&#9734; (3/5)</option>
+                                                  <option value="2">&#9733;&#9733;&#9734;&#9734;&#9734; (2/5)</option>
+                                                  <option value="1">&#9733;&#9734;&#9734;&#9734;&#9734; (1/5)</option>
+                                              </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="form-label" for="review">Review text *</label>
+                                    <textarea class="form-control" rows="4" name="review" id="review" placeholder="Enter your review" required="required"></textarea>
+                                </div>
+                                <button class="btn btn-primary" type="submit">Post review</button>
+                                <div class="d-flex d-block d-sm-flex review">
+                                    <div class="text-md-center flex-shrink-0 me-4 me-xl-5"><img class="d-block avatar avatar-xl p-2 mb-2" src="img/avatar/avatar-8.jpg" alt="동혁"><span class="text-uppercase text-muted text-sm">이동혁</span></div>
+                                    <div>
+                                        <h6 class="mt-2 mb-1">이동혁</h6>
+                                        <div class="mb-2"><i class="fa fa-xs fa-star text-primary"></i><i class="fa fa-xs fa-star text-primary"></i><i class="fa fa-xs fa-star text-primary"></i><i class="fa fa-xs fa-star text-primary"></i><i class="fa fa-xs fa-star text-primary"></i>
+                                        </div>
+                                        <p class="text-muted text-sm">생각보다 길이 어려워요 그치만 풍경이 보기 좋아요</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex d-block d-sm-flex review">
+                                    <div class="text-md-center flex-shrink-0 me-4 me-xl-5"><img class="d-block avatar avatar-xl p-2 mb-2" src="img/avatar/avatar-8.jpg" alt="동수"><span class="text-uppercase text-muted text-sm">이동수</span></div>
+                                    <div>
+                                        <h6 class="mt-2 mb-1">이동수</h6>
+                                        <div class="mb-2"><i class="fa fa-xs fa-star text-primary"></i><i class="fa fa-xs fa-star text-primary"></i><i class="fa fa-xs fa-star text-primary"></i><i class="fa fa-xs fa-star text-primary"></i><i class="fa fa-xs fa-star text-primary"></i>
+                                        </div>
+                                        <p class="text-muted text-sm">둘레길이 관리가 참 잘되어있어서 편했어요</p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="text-block">
+                        <div class="row">
+                            <div class="d-flex d-block d-sm-flex">
+                                <div class="text-md-center flex-shrink-0 me-4 me-xl-5">
+                                    <a href="#">
+                                        <img class="d-block avatar avatar-xl p-2 mb-2 rounded-5" src="img/top100/가지산4.jpg">
+                                    </a>
+                                    <span class="text-uppercase text-muted text-sm"></span>
+                                </div>
+                                <div>
+                                    <h5 class="mt-2 mb-1">금평리 구간</h5><br>
+                                    <p class="text-muted ">전라북도 남원시, 전라남도 구례군, 경상남도 하동군ㆍ산청군ㆍ함양군</p>
+                                    <button class="btn btn-outline-primary" style="float: right;" type="button" data-bs-toggle="collapse" data-bs-target="#leaveReview" aria-expanded="false" aria-controls="leaveReview">리뷰</button>
+                                    <p class="text-muted text-sm">리뷰 : 21개</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-block">
+                        <div class="row">
+                            <div class="d-flex d-block d-sm-flex ">
+                                <div class="text-md-center flex-shrink-0 me-4 me-xl-5">
+                                    <a href="#">
+                                        <img class="d-block avatar avatar-xl p-2 mb-2 rounded-5" src="img/top100/금오산2.jpg">
+                                    </a>
+                                    <span class="text-uppercase text-muted text-sm"></span>
+                                </div>
+                                <div>
+                                    <h5 class="mt-2 mb-1">금평리 구간</h5><br>
+                                    <p class="text-muted ">전라북도 남원시, 전라남도 구례군, 경상남도 하동군ㆍ산청군ㆍ함양군</p>
+                                    <button class="btn btn-outline-primary" style="float: right;" type="button" data-bs-toggle="collapse" data-bs-target="#leaveReview" aria-expanded="false" aria-controls="leaveReview">리뷰</button>
+                                    <p class="text-muted text-sm">리뷰 : 21개</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-block">
+                        <div class="row">
+                            <div class="d-flex d-block d-sm-flex ">
+                                <div class="text-md-center flex-shrink-0 me-4 me-xl-5">
+                                    <a href="#">
+                                        <img class="d-block avatar avatar-xl p-2 mb-2 rounded-5" src="img/top100/내연산3.jpg">
+                                    </a>
+                                    <span class="text-uppercase text-muted text-sm"></span>
+                                </div>
+                                <div>
+                                    <h5 class="mt-2 mb-1">금평리 구간</h5><br>
+                                    <p class="text-muted ">전라북도 남원시, 전라남도 구례군, 경상남도 하동군ㆍ산청군ㆍ함양군</p>
+                                    <button class="btn btn-outline-primary" style="float: right;" type="button" data-bs-toggle="collapse" data-bs-target="#leaveReview" aria-expanded="false" aria-controls="leaveReview">리뷰</button>
+                                    <p class="text-muted text-sm">리뷰 : 21개</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-xl-7 px-lg-0">
+                    <div class="map-wrapper-450 h-100" id="detailSideMap"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="position-relative z-index-10 d-print-none">
+        <!-- Main block - menus, subscribe form-->
+        <div class="py-6 bg-gray-200 text-muted">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <div class="fw-bold text-uppercase text-dark mb-3">Directory</div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a class="text-muted text-primary-hover" href="#" target="_blank" title="twitter"><i class="fab fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a class="text-muted text-primary-hover" href="#" target="_blank" title="facebook"><i class="fab fa-facebook"></i></a></li>
+                            <li class="list-inline-item"><a class="text-muted text-primary-hover" href="#" target="_blank" title="instagram"><i class="fab fa-instagram"></i></a></li>
+                            <li class="list-inline-item"><a class="text-muted text-primary-hover" href="#" target="_blank" title="pinterest"><i class="fab fa-pinterest"></i></a></li>
+                            <li class="list-inline-item"><a class="text-muted text-primary-hover" href="#" target="_blank" title="vimeo"><i class="fab fa-vimeo"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
+                        <h6 class="text-uppercase text-dark mb-3">Rentals</h6>
+                        <ul class="list-unstyled">
+                            <li><a class="text-muted" href="index.html">Rooms</a></li>
+                            <li><a class="text-muted" href="category-rooms.html">Map on top</a></li>
+                            <li><a class="text-muted" href="category-2-rooms.html">Side map</a></li>
+                            <li><a class="text-muted" href="category-3-rooms.html">No map</a></li>
+                            <li><a class="text-muted" href="detail-rooms.html">Room detail</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
+                        <h6 class="text-uppercase text-dark mb-3">Pages</h6>
+                        <ul class="list-unstyled">
+                            <li><a class="text-muted" href="compare.html">Comparison                                   </a></li>
+                            <li><a class="text-muted" href="team.html">Team                                   </a></li>
+                            <li><a class="text-muted" href="contact.html">Contact                                   </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <h6 class="text-uppercase text-dark mb-3">Daily Offers & Discounts</h6>
+                        <p class="mb-3"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. At itaque temporibus.</p>
+                        <form action="#" id="newsletter-form">
+                            <div class="input-group mb-3">
+                                <input class="form-control bg-transparent border-dark border-end-0" type="email" placeholder="Your Email Address" aria-label="Your Email Address">
+                                <button class="btn btn-outline-dark border-start-0" type="submit"> <i class="fa fa-paper-plane text-lg"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright section of the footer-->
+        <div class="py-4 fw-light bg-gray-800 text-gray-300">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="text-sm mb-md-0">&copy; 2021, Your company. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-inline mb-0 mt-2 mt-md-0 text-center text-md-end">
+                            <li class="list-inline-item"><img class="w-2rem" src="img/visa.svg" alt="..."></li>
+                            <li class="list-inline-item"><img class="w-2rem" src="img/mastercard.svg" alt="..."></li>
+                            <li class="list-inline-item"><img class="w-2rem" src="img/paypal.svg" alt="..."></li>
+                            <li class="list-inline-item"><img class="w-2rem" src="img/western-union.svg" alt="..."></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- JavaScript files-->
+    <script>
+        // ------------------------------------------------------- //
+        //   Inject SVG Sprite - 
+        //   see more here 
+        //   https://css-tricks.com/ajaxing-svg-sprite/
+        // ------------------------------------------------------ //
+        function injectSvgSprite(path) {
+
+            var ajax = new XMLHttpRequest();
+            ajax.open("GET", path, true);
+            ajax.send();
+            ajax.onload = function(e) {
+                var div = document.createElement("div");
+                div.className = 'd-none';
+                div.innerHTML = ajax.responseText;
+                document.body.insertBefore(div, document.body.childNodes[0]);
+            }
+        }
+        // to avoid CORS issues when viewing using file:// protocol, using the demo URL for the SVG sprite
+        // use your own URL in production, please :)
+        // https://demo.bootstrapious.com/directory/1-0/icons/orion-svg-sprite.svg
+        //- injectSvgSprite('${path}icons/orion-svg-sprite.svg'); 
+        injectSvgSprite('https://demo.bootstrapious.com/directory/1-4/icons/orion-svg-sprite.svg');
+    </script>
+    <!-- jQuery-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Bootstrap JS bundle - Bootstrap + PopperJS-->
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Magnific Popup - Lightbox for the gallery-->
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <!-- Smooth scroll-->
+    <script src="vendor/smooth-scroll/smooth-scroll.polyfills.min.js"></script>
+    <!-- Bootstrap Select-->
+    <script src="vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <!-- Object Fit Images - Fallback for browsers that don't support object-fit-->
+    <script src="vendor/object-fit-images/ofi.min.js"></script>
+    <!-- Swiper Carousel                       -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+    <script>
+        var basePath = ''
+    </script>
+    <!-- Main Theme JS file    -->
+    <script src="js/theme.js"></script>
+    <!-- Map-->
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+    <!-- Available tile layers-->
+    <script src="js/map-layers.js">
+    </script>
+    <script src="js/map-detail.js">
+    </script>
+    <script>
+        createDetailMap({
+            mapId: 'detailSideMap',
+            mapZoom: 18,
+            mapCenter: [40.732346, -74.0014247],
+            markerShow: true,
+            markerPosition: [40.732346, -74.0014247],
+            markerPath: 'img/marker.svg',
+        })
+    </script>
+</body>
+
+</html>
