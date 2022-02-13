@@ -117,9 +117,8 @@
 
     <section class="py-5">
         <div class="container">
-            <div class="d-flex justify-content-between align-items-center flex-column flex-md-row mb-4">
+            <div class="d-flex justify-content-between align-items-center flex-column flex-md-row mb-5">
                 <div class="me-3">
-                    <label class="form-label">지역선택</label>
                     <ul class="list-inline mb-0">
                         <li class="list-inline-item">
                             <div class="form-check">
@@ -155,41 +154,38 @@
                     <ul class="list-inline mb-0">
                         <li class="list-inline-item">
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="type_0" name="type[]">
-                                <label class="form-check-label" for="type_0">경상도</label>
+                                <input class="form-check-input" type="checkbox" id="type_5" name="type[]">
+                                <label class="form-check-label" for="type_5">경상도</label>
                             </div>
                         </li>
                         <li class="list-inline-item">
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="type_1" name="type[]">
-                                <label class="form-check-label" for="type_1">제주도</label>
+                                <input class="form-check-input" type="checkbox" id="type_6" name="type[]">
+                                <label class="form-check-label" for="type_6">제주도</label>
                             </div>
                         </li>
                         <li class="list-inline-item">
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="type_2" name="type[]">
-                                <label class="form-check-label" for="type_2">전북</label>
+                                <input class="form-check-input" type="checkbox" id="type_7" name="type[]">
+                                <label class="form-check-label" for="type_7">전북</label>
                             </div>
                         </li>
                         <li class="list-inline-item">
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="type_3" name="type[]">
-                                <label class="form-check-label" for="type_3">충남</label>
+                                <input class="form-check-input" type="checkbox" id="type_8" name="type[]">
+                                <label class="form-check-label" for="type_8">충남</label>
                             </div>
                         </li>
                     </ul>
                 </div>
-                <div>
-                    <label class="form-label me-2" for="form_sort">검색</label>
-                    <form class="form-inline d-none d-sm-flex" action="#" id="search">
-                        <div class="input-label-absolute input-label-absolute-left input-expand ms-lg-2 ms-xl-3">
-                            <label class="label-absolute" for="search_search"><i class="fa fa-search"></i><span class="sr-only">What are you looking for?</span></label>
-                            <input class="form-control form-control-sm border-0 shadow-0 bg-gray-200" id="search_search" placeholder="Search" aria-label="Search" type="search">
-                        </div>
-                    </form>
+                <div class="col-xl-7 col-md-4">
+                    <div class="input-label-absolute input-label-absolute-right" style="float: right;">
+                        <div class="label-absolute"><i class="fa fa-search"></i></div>
+                        <input class="form-control pe-4" type="search" name="search" placeholder="산 이름을 입력해주세요" id="form_search">
+                    </div>
                 </div>
             </div>
-            <div class="row" style="overflow:auto; width:1200px; height:800px;">
+            <div class="row" style="overflow:auto; width:1350px; height:800px;">
                 <!-- venue item-->
                 <div class="col-sm-6 col-lg-4 mb-5 hover-animate" data-marker-id="59c0c8e33b1527bfe2abaf92">
                     <div class="swiper-slide h-auto px-2">
