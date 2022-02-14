@@ -17188,3 +17188,30 @@ STYLE SWITCHER FOR DEMO
 #style-switch .h4 {
     color: #495057;
 }
+
+
+/* ----------------------------------------------------------- */
+
+.offcanvas-body {
+    height: 100%;
+}
+
+.offcanvas-body::-webkit-scrollbar {
+    width: 0.1875rem;
+    background-color: transparent;
+    opacity: 0;
+}
+
+.offcanvas-body::-webkit-scrollbar-thumb {
+    background-color: #aeb4be;
+    border-radius: 0.09375rem;
+}
+
+opt .offcanvas-body>.simplebar-track {
+    display: block;
+    background-color: transparent;
+}
+
+.offcanvas-body .simplebar-vertical {
+    margin-right: 0.1875rem;
+}
