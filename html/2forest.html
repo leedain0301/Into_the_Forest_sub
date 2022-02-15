@@ -53,19 +53,6 @@
                         </div>
                         <!-- 필터 드롭박스1 -->
                         <div class="col-xl-6 col-md-6 mb-4">
-                            <label class="form-label" for="form_neighbourhood">지역선택</label>
-                            <select class="selectpicker form-control" name="neighbourhood" id="form_neighbourhood" placeholder="지역 선택" data-style="btn-selectpicker">
-                                <option value="neighbourhood_0">전국</option>
-                                <option value="neighbourhood_1">강원도</option>
-                                <option value="neighbourhood_2">경기도</option>
-                                <option value="neighbourhood_3">경상도</option>
-                                <option value="neighbourhood_4">전라도</option>
-                                <option value="neighbourhood_5">제주도</option>
-                                <option value="neighbourhood_5">충정도</option>
-                            </select>
-                        </div>
-                        <!-- 필터 드롭박스2 -->
-                        <div class="mb-4">
                             <label class="form-label" for="form_type">지역선택</label>
                             <select class="selectpicker form-control" name="type" id="form_type" multiple data-style="btn-selectpicker" title="">
                               <option value="type_0">전국</option>
@@ -77,61 +64,9 @@
                               <option value="type_6">충정도</option>
                             </select>
                         </div>
-                        <!-- 필터 체크박스1 -->
-                        <div>
-                            <div class="row">
-                                <div class="mb-4">
-                                    <label class="form-label">지역선택</label>
-                                    <ul class="list-inline mb-0">
-                                        <li class="list-inline-item">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="cuisine_0" name="cuisine[]">
-                                                <label class="form-check-label" for="cuisine_0">전국</label>
-                                            </div>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="cuisine_1" name="cuisine[]">
-                                                <label class="form-check-label" for="cuisine_1">강원도</label>
-                                            </div>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="cuisine_1" name="cuisine[]">
-                                                <label class="form-check-label" for="cuisine_1">경기도</label>
-                                            </div>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="cuisine_1" name="cuisine[]">
-                                                <label class="form-check-label" for="cuisine_1">경상도</label>
-                                            </div>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="cuisine_1" name="cuisine[]">
-                                                <label class="form-check-label" for="cuisine_1">전라도</label>
-                                            </div>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="cuisine_1" name="cuisine[]">
-                                                <label class="form-check-label" for="cuisine_1">제주도</label>
-                                            </div>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="cuisine_1" name="cuisine[]">
-                                                <label class="form-check-label" for="cuisine_1">충청도</label>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
                         <div class="row">
-                            <!-- 필터 체크박스2 -->
-                            <div class="col-xl-6 mb-4">
+                            <!-- 운영주체 -->
+                            <div class="col-xl-6 mb-4 mt-2">
                                 <label class="form-label">운영주체</label>
                                 <ul class="list-inline mb-0">
                                     <li class="list-inline-item">
@@ -148,38 +83,38 @@
                                     </li>
                                     <li class="list-inline-item">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="cuisine_1" name="cuisine[]">
-                                            <label class="form-check-label" for="cuisine_1">사립</label>
+                                            <input class="form-check-input" type="checkbox" id="cuisine_2" name="cuisine[]">
+                                            <label class="form-check-label" for="cuisine_2">사립</label>
                                         </div>
                                     </li>
                                 </ul>
                             </div>
-                            <!-- 라디오 타입 -->
-                            <div class="col-xl-6 mb-4">
+                            <!-- 편의시설 -->
+                            <div class="col-xl-6 mb-4  mt-2">
                                 <label class="form-label">편의시설</label>
                                 <ul class="list-inline mb-0">
                                     <li class="list-inline-item">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="vegetarians_0" name="vegetarians">
-                                            <label class="form-check-label" for="vegetarians_0">회의실</label>
+                                            <input class="form-check-input" type="checkbox" id="cuisine_3" name="cuisine[]">
+                                            <label class="form-check-label" for="cuisine_3">회의실</label>
                                         </div>
                                     </li>
                                     <li class="list-inline-item">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="vegetarians_1" name="vegetarians">
-                                            <label class="form-check-label" for="vegetarians_1">물놀이장</label>
+                                            <input class="form-check-input" type="checkbox" id="cuisine_4" name="cuisine[]">
+                                            <label class="form-check-label" for="cuisine_4">물놀이장</label>
                                         </div>
                                     </li>
                                     <li class="list-inline-item">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" id="vegetarians_1" name="vegetarians">
-                                            <label class="form-check-label" for="vegetarians_1">바베큐</label>
+                                            <input class="form-check-input" type="checkbox" id="cuisine_5" name="cuisine[]">
+                                            <label class="form-check-label" for="cuisine_5">바베큐</label>
                                         </div>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-6 mt-4 mb-4">
+                        <div class="col-6 mt-1 mb-3">
                             <button class="btn btn-primary" type="submit"> <i class="fas fa-filter me-1"></i>Filter & Search</button>
                         </div>
                     </div>
