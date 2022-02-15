@@ -278,36 +278,35 @@
         </div>
     </section>
     <section class="pb-6 mt-5 ">
-        <div class="container">
-            <div class="row container">
-                <div class="col-xl-1 col-6 mb-4">
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-xl-3">
                     <button class="btn btn-primary" type="submit">글작성</button>
                 </div>
-                <div class="col-xl-2 col-md-6 mb-5">
+                <div class="col-xl-3">
                     <select class="selectpicker form-control" name="category" id="category" data-style="btn-selectpicker" title=" ">
-                      <option style="display: none;" selected>카테고리</option>
-                      <option value="category_0">산    </option>
-                      <option value="category_1">휴양림</option>
-                      <option value="category_2">둘레길</option>
-                      <option value="category_3">자전거길</option>
-                    </select>
+                              <option style="display: none;" selected>카테고리</option>
+                              <option value="category_0">산    </option>
+                              <option value="category_1">휴양림</option>
+                              <option value="category_2">둘레길</option>
+                              <option value="category_3">자전거길</option>
+                            </select>
                 </div>
-                <div class="col-xl-8 col-md-6 mb-4">
-                    <div class="input-label-absolute input-label-absolute-right">
-                        <div class="label-absolute"><button class=""><i class="fa fa-search"></i></button></div>
-                        <input class="form-control pe-4" type="search" name="search" placeholder="검색어를 입력해주세요." id="form_search">
+                <div class="col-xl-6">
+                    <div class="input-group">
+                        <input class="form-control" type="text" placeholder="검색어를 입력해주세요." id="form_search">
+                        <button class="btn btn-primary" style="float: right;" type="submit">검색</button>
                     </div>
                 </div>
-                <div class="col-xl-1 col-6 mb-4">
-                    <button class="btn btn-primary" type="submit">검색</button>
-                </div>
             </div>
+        </div>
+        <div class="container">
             <div class="row mb-5">
                 <!-- blog item-->
                 <div class="col-lg-4 col-sm-6 mb-4 hover-animate">
                     <div class="card shadow border-0 h-100">
                         <!--<a href="post.html"><img class="img-fluid card-img-top" src="img/4윤정희/서울둘레길.png" alt="..." /></a>-->
-                        <a href="post.html"><img class="img-fluid card-img-top avatar-lg" src="img/community.jpg" alt="..." /></a>
+                        <a href="post.html"><img class="img-fluid card-img-top avatar-lg" src="img/community.jpg" alt="..." style="width: 100%; height: 12rem; object-fit: cover;" /></a>
                         <div class="card-body"><a class="text-uppercase text-muted text-sm letter-spacing-2" href="#">둘레길 </a>
                             <h5 class="my-2"><a class="text-dark" href="post.html">서울둘레길 네 차례 완주한 코스별 후기          </a></h5>
                             <p class="text-gray-500 text-sm my-3"><i class="far fa-clock me-2"></i>2018.04.19 <i class="me-4"></i><i class="fas fa-user me-2"></i>sunshine2</p>
@@ -319,8 +318,7 @@
                 <!-- blog item-->
                 <div class="col-lg-4 col-sm-6 mb-4 hover-animate">
                     <div class="card shadow border-0 h-100">
-                        <!--<a href="post.html"><img class="img-fluid card-img-top" src="img/4윤정희/한라산.png" alt="..." /></a>-->
-                        <a href="post.html"><img class="img-fluid card-img-to avatar-lg" src="img/community11.png" alt="..." /></a>
+                        <a href="post.html"><img class="img-fluid card-img-to avatar-lg" src="img/community11.png" alt="..." style="width: 100%; height: 12rem; object-fit: cover;" /></a>
                         <div class="card-body"><a class="text-uppercase text-muted text-sm letter-spacing-2" href="#">산 </a>
                             <h5 class="my-2"><a class="text-dark" href="post.html">[한라산 백록담]등산초보의 한라산 성판악코스 등반후기</a></h5>
                             <p class="text-gray-500 text-sm my-3"><i class="far fa-clock me-2"></i>2021.04.10 <i class="me-4"></i><i class="fas fa-user me-2"></i>2jelly</p>
@@ -333,7 +331,7 @@
                 <div class="col-lg-4 col-sm-6 mb-4 hover-animate">
                     <div class="card shadow border-0 h-100">
                         <!--<a href="post.html"><img class="img-fluid card-img-top" src="img/4윤정희/계룡산.png" alt="..." /></a>-->
-                        <a href="post.html"><img class="img-fluid card-img-top avatar-lg" src="img/community2.png" alt="..." /></a>
+                        <a href="post.html"><img class="img-fluid card-img-top avatar-lg" src="img/community2.png" alt="..." style="width: 100%; height: 12rem; object-fit: cover;" /></a>
                         <div class="card-body"><a class="text-uppercase text-muted text-sm letter-spacing-2" href="#">산 </a>
                             <h5 class="my-2"><a class="text-dark" href="post.html">100대 명산 계룡산 등산 후기</a></h5>
                             <p class="text-gray-500 text-sm my-3"><i class="far fa-clock me-2"></i>2020.09.28 <i class="me-4"></i><i class="fas fa-user me-2"></i>RiverWind JH-Jung</p>
@@ -451,25 +449,19 @@
                 </div>
             </div>
             <!-- Pagination -->
-            <nav aria-label="Blog pagination">
-                <ul class="pagination justify-content-between mb-5">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination pagination-template d-flex justify-content-center">
                     <li class="page-item">
-                        <a class="page-link text-sm rounded" href="#"> <i class="fa fa-chevron-left me-1"></i>Older posts</a>
+                        <a class="page-link" href="#"> <i class="fa fa-angle-left"></i></a>
                     </li>
-                    <nav aria-label="Page navigation example">
-                        <ul class="pagination pagination-template d-flex justify-content-center">
-                            <li class="page-item">
-                                <a class="page-link" href="#"> <i class="fa fa-angle-left"></i></a>
-                            </li>
-                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item">
-                                <a class="page-link" href="#"> <i class="fa fa-angle-right"></i></a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <li class="page-item disabled"><a class="page-link text-sm rounded" href="#" tabindex="-1">Newer posts  <i class="fa fa-chevron-right ms-1"></i></a></li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#"> <i class="fa fa-angle-right"></i></a>
+                    </li>
                 </ul>
             </nav>
         </div>
