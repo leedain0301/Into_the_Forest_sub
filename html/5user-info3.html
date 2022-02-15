@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+    <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Directory Theme by Bootstrapious</title>
@@ -185,13 +185,13 @@
           </div>
           <!-- 메인 -->
           <div class="col-lg-9 ps-lg-5">              
-            <div class="text-block">
+            <div class="text-block mb-5 border-0">
               <!-- <h3 class="mb-5">내정보</h3> -->
               <h5 class="mb-3">개인정보</h5>        
               <p class="text-sm text-muted"><i class="fa fa-id-card fa-fw me-2"></i>이진<br><i class="fa fa-birthday-cake fa-fw me-2"></i>1990/00/00<br><i class="fa fa-envelope-open fa-fw me-2"></i>john.doe@directory.com  <span class="mx-2"> | </span>  <i class="fa fa-phone fa-fw me-2"></i>+82)010-1234-5678</p>
               <form action="#">
                 <div class="row pt-5">
-                  <!-- <h5>개인정보 변경</h5> -->
+                  <h5>개인정보 변경</h5>
                   <div class="mb-4 col-md-6">
                     <label class="form-label" for="name">이름</label>
                     <input class="form-control" type="text" name="name" id="name" value="이진">
@@ -200,17 +200,8 @@
                     <label class="form-label" for="date">번호</label>
                     <input class="form-control" type="text" name="date" id="date" value="010-1234-5678">
                   </div>
-                  <!-- <h5 class="pt-2">비밀번호 변경</h5> -->
-                  <div class="mb-4 col-md-6">
-                    <label class="form-label" for="email">비밀번호</label>
-                    <input class="form-control" type="password" name="password" id="password" value="1234567890">
-                  </div>
-                  <div class="mb-4 col-md-6">
-                    <label class="form-label" for="phone">비밀번호 확인</label>
-                    <input class="form-control" type="password" name="password" id="password" value="1234567890">
-                  </div>
                 </div>
-              </form>              
+              </form>  
               <div class="mb-1">         
                 <form class="dropzone" id="demo-upload" action="/upload">
                   <div class="dz-message text-muted">
@@ -218,8 +209,33 @@
                     <p><span class="note">나만의 프로필 사진으로 변경할 수 있습니다.</span></p>
                   </div>
                 </form>
-              </div>
-              <button class="btn btn-outline-primary mb-4 mt-4 float-end" type="submit">변경된 개인정보를 저장합니다</button>
+              </div>  
+              <button class="btn btn-outline-primary mb-4 mt-4 float-end" type="submit">개인정보 변경</button>           
+            </div>
+            <div class="text-block">
+              <div class="row">
+                <div class="col-sm-8">
+                  <h5>비밀번호 변경</h5>
+                  <p class="text-sm text-muted">마지막 업데이트는 3개월 전 입니다.</p>
+                </div>
+              </div>              
+              <form action="#">
+                  <div class="row pt-4">
+                  <div class="mb-4 col-12">
+                    <label class="form-label" for="password-current">현재 비밀번호</label>
+                    <input class="form-control" type="password" name="password-current" id="password-current">
+                  </div>
+                  <div class="mb-4 col-md-6">
+                    <label class="form-label" for="password-new">새로운 비밀번호</label>
+                    <input class="form-control" type="password" name="password-new" id="password-new">
+                  </div>
+                  <div class="mb-4 col-md-6">
+                    <label class="form-label" for="password-confirm">비밀번호 확인</label>
+                    <input class="form-control" type="password" name="password-confirm" id="password-confirm">
+                  </div>
+                </div>                
+              </form>                
+              <button class="btn btn-outline-primary float-end">비밀번호 변경</button>
             </div> <!-- text-block -->
           </div> <!-- col -->
         </div> <!-- row -->
