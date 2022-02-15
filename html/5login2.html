@@ -29,82 +29,57 @@
     <!-- Font Awesome CSS-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   </head>
-  <body style="padding-top: 72px;">
-    <header class="header">
-      <!-- Navbar-->
-      <!-- /Navbar -->
-    </header>
-
-    <section class="d-flex align-items-center dark-overlay bg-cover" style="background-image: url(img/breadcrumbs_img.jpg);">
-      <div class="container py-6 py-lg-6 text-white overlay-content text-center"> 
-        <div class="row">
-          <div class="col-xl-10 mx-auto">
-            <h1 class="display-5 font-weight-bold text-shadow">게시판</h1>
-            <p class="text-lg text-shadow">홈 > 게시판</p>
+  <body>
+    <!-- main -->
+    <div class="container-fluid px-3">
+      <div class="row min-vh-100 justify-content-center">
+        <div class="col-md-8 col-lg-6 col-xl-5 d-flex align-items-center">
+          <div class="w-100 py-5 px-md-5 px-xxl-6 position-relative">
+            <div class="mb-4"><img class="img-fluid mb-4" src="img/logo-square.svg" alt="..." style="max-width: 4rem;">
+              <h2>Welcome Back</h2>
+            </div>
+            <form class="form-validate">
+              <div class="mb-4">
+                <label class="form-label" for="loginUsername">아이디</label>
+                <input class="form-control" name="loginUsername" id="loginUsername" type="email" placeholder="아이디" autocomplete="off" required data-msg="Please enter your email">
+              </div>
+              <div class="mb-4">
+                <div class="row">
+                  <div class="col">
+                    <label class="form-label" for="loginPassword">비밀번호</label>
+                  </div>
+                </div>
+                <input class="form-control" name="loginPassword" id="loginPassword" placeholder="비밀번호" type="password" required data-msg="Please enter your password">
+              </div>
+              <div class="mb-4">
+              </div>
+              <!-- Submit-->
+              <div class="d-grid">
+                <button class="btn btn-lg btn-primary">로그인</button>
+              </div>
+              <hr class="my-3 hr-text letter-spacing-2" data-content="OR">
+              <div class="d-grid gap-2">
+                <button class="btn btn btn-outline-success btn-social d-flex align-items-center justify-content-center ps-0">
+                    <img class="me-3" src="./img/naver.png" style="width: 1rem;"> </img>
+                    <span class="d-none d-sm-inline">네이버 로그인</span>
+                </button>
+                <button class="btn btn btn-outline-warning btn-social d-flex align-items-center justify-content-center ps-1">
+                    <img class="me-3" src="./img/kakao.png" style="width: 1rem;"> </img>
+                    <span class="d-none d-sm-inline">카카오 로그인</span>
+                </button>
+            </div>
+              <hr class="my-4">
+              <p class="text-center"><small class="text-muted text-center">아직 회원이 아니신가요? &nbsp; <a href="5signp.html">회원가입</a></small></p>
+            </form>
+            <a class="close-absolute me-md-5 me-xl-6 pt-5" href="5main2.html"> 
+              <svg class="svg-icon w-3rem h-3rem">
+                  <use xlink:href="#close-1"> </use>
+              </svg>
+            </a>
           </div>
         </div>
       </div>
-    </section>
-        
-    <section class="py-5">
-      <div class="container">
-        <div class="row">
-          <!-- 사이드 -->
-          <div class="col-lg-3 me-lg-auto border-end">
-            <div class="mb-4">
-              <label class="form-label" for="form_type">게시판 선택</label>
-              <select class="selectpicker form-control" name="type" id="form_type" data-style="btn-selectpicker" title="" aria-describedby="propertyTypeHelp">
-                <option value="type_0">방문후기</option>
-                <option value="type_1">자유게시판</option>
-                <option value="type_2">1:1 문의 게시판</option>
-                <option value="type_2">스탬프인증</option>
-              </select><small class="form-text text-muted" id="propertyTypeHelp"></small>
-            </div>
-          </div>
-          <div class="col-lg-9 ps-lg-5">              
-            <div class="text-block">
-              <form>
-                <div class="row form-block">
-                  <div class="col-lg-12">
-                    <div class="mb-4">
-                      <label class="form-label" for="form_street">작성자</label>
-                      <input class="form-control" name="name" id="form_street">
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="mb-4">
-                      <label class="form-label" for="form_street">제목</label>
-                      <input class="form-control" name="name" id="form_street">
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="mb-4">
-                      <label class="form-label" for="form_street">명산이름</label>
-                      <input class="form-control" name="name" id="form_street">
-                    </div>
-                  </div>
-                </div>
-                <form action="#" class="mt-4">
-                  <textarea class="form-control border border-light-gray mb-4" id="message" placeholder="내용 작성" rows="6" maxlength="1000" required></textarea>
-                </form>  
-                <form class="dropzone" id="demo-upload" action="/upload">
-                  <div class="dz-message text-muted">
-                    <p>클릭하여 파일을 불러오세요.</p>
-                    <p><span class="note">나만의 프로필 사진으로 변경할 수 있습니다.</span></p>
-                  </div>
-                </form>
-                <button class="btn btn-outline-primary mb-4 mt-4 float-end" type="submit">저장</button>
-              </form>
-            </div> <!-- text-block -->
-          </div> <!-- col -->
-        </div> <!-- row -->
-      </div> <!-- container-->
-    </section>
-
-
-    <!-- Footer-->
-    <footer class="position-relative z-index-10 d-print-none">
-    </footer>
+    </div>  
     <!-- JavaScript files-->
     <script>
       // ------------------------------------------------------- //

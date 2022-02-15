@@ -105,125 +105,214 @@
       <!-- /Navbar -->
     </header>
 
-
-
+    <!-- breadcrumb -->
     <section class="d-flex align-items-center dark-overlay bg-cover" style="background-image: url(img/breadcrumbs_img.jpg);">
       <div class="container py-6 py-lg-6 text-white overlay-content text-center"> 
         <div class="row">
           <div class="col-xl-10 mx-auto">
-            <h1 class="display-5 font-weight-bold text-shadow">마이페이지</h1>
-            <p class="text-lg text-shadow">홈 > 마이페이지</p>
+            <h1 class="display-5 font-weight-bold text-shadow">예약정보</h1>
+            <p class="text-lg text-shadow">홈 > 마이페이지 > 예약정보</p>
           </div>
         </div>
       </div>
     </section>
 
-
     <section class="py-5">
       <div class="container">
         <div class="row">
+          <!-- 사이드 -->
           <div class="col-lg-3 me-lg-auto">
             <div class="card border-0 shadow mb-6 mb-lg-0">
               <div class="card-header bg-gray-100 py-4 border-0 text-center"><a class="d-inline-block" href="#"><img class="d-block avatar avatar-xxl p-2 mb-2" src="img/user.png" alt=""></a>
-                <h5>이진진</h5>
-                <p class="text-muted text-sm mb-0">대한민국, 서울시</p>
+                <h5>우보</h5>
               </div>
               <div class="card-body p-4">
                 <div class="d-flex align-items-center mb-3">
                   <div class="icon-rounded icon-rounded-sm bg-success-light flex-shrink-0 me-2">
-                    <svg class="svg-icon text-primary svg-icon-md">
-                      <use xlink:href="#diploma-1"> </use>
-                    </svg>
+                    <svg class="svg-icon theme-line-0 svg-icon-md"><use xlink:href="#diploma-1"> </use></svg>
                   </div>
                   <div>
-                    <p class="mb-0">스탬프 5</p>
+                    <p class="mb-0">스탬프 2</p>
                   </div>
                 </div>
-
-                <hr>                
-
+                <hr>     
+                <a href="5user-info.html">
                 <div class="d-flex align-items-center mb-3">
                   <div class="icon-rounded icon-rounded-sm bg-gray-200 flex-shrink-0 me-2">
-                    <svg class="svg-icon text-primary svg-icon-md">
-                      <use xlink:href="#user-1"> </use>
-                    </svg>
+                    <svg class="svg-icon theme-line-0 svg-icon-md"><use xlink:href="#user-1"></use></svg>
                   </div>
                   <div>
                     <p class="mb-0">내정보</p>
                   </div>
                 </div>
+                </a>
+                <a href="5user-stamp.html">
                 <div class="d-flex align-items-center mb-3">
                   <div class="icon-rounded icon-rounded-sm bg-gray-200 flex-shrink-0 me-2">
-                    <svg class="svg-icon text-primary svg-icon-md">
-                      <use xlink:href="#paper-plane-1"> </use>
-                    </svg>
+                    <svg class="svg-icon theme-line-0 svg-icon-md"><use xlink:href="#mountain-1"></use></svg>
                   </div>
                   <div>
-                    <p class="mb-0">작성리뷰</p>
+                    <p class="mb-0">스탬프</p>
                   </div>
                 </div>
+                </a>
+                <a href="5user-reservation.html">
                 <div class="d-flex align-items-center mb-3">
-
                   <div class="icon-rounded icon-rounded-sm bg-gray-200 flex-shrink-0 me-2">
-                    <svg class="svg-icon text-primary svg-icon-md">
-                      <use xlink:href="#checkmark-1"> </use>
-                    </svg>
+                    <svg class="svg-icon theme-line-0 svg-icon-md"><use xlink:href="#address-book-1"></use></svg>
                   </div>
                   <div>
                     <p class="mb-0">예약정보</p>
                   </div>
                 </div>
+                </a>
+                <a href="5user-review.html">
                 <div class="d-flex align-items-center mb-3">
                   <div class="icon-rounded icon-rounded-sm bg-gray-200 flex-shrink-0 me-2">
-                    <svg class="svg-icon text-primary svg-icon-md">
-                      <use xlink:href="#mountain-1"> </use>
-                    </svg>
+                    <svg class="svg-icon theme-line-1 svg-icon-md"><use xlink:href="#edit-1"></use></svg>
                   </div>
                   <div>
-                    <p class="mb-0">스탬프 조회</p>
+                    <p class="mb-0">내가쓴글</p>
                   </div>
                 </div>
-                
+                </a>
               </div>
             </div>
           </div>
+
+          <!-- 메인 -->
           <div class="col-lg-9 ps-lg-5">              
             <div class="text-block">
-              <h1 class="hero-heading mb-4">방문 예정</h1>
-              <p class="text-muted mb-5">예약된 숙소가 없습니다. 다음 여행을 계획해보세요.</p>
-              <p class="mb-6"> <img class="img-fluid" src="img/illustration/undraw_trip_dv9f.svg" alt="" style="width: 400px;"></p>
-              <h2 class="mb-5">예약내역</h2>
-              
-              <!-- <h4 class="mb-5">휴양림 예약 정보</h4> -->
+              <h2 class="hero-heading mb-4">휴양림 예약 내역</h2>
+              <h4 class="mb-5">방문 예정</h4> 
               <div class="row">
-                <!-- place item-->
-                <div class="col-xl-3 col-md-4 col-sm-6 mb-5" data-marker-id="59c0c8e33b1527bfe2abaf92">
-                  <div class="card hover-animate h-100 border-0 shadow">
-                    <div class="card-img-top overflow-hidden"><a href="user-booking-detail.html"><img class="img-fluid" src="img/mountain/내장산1.jpg" alt="Modern, Well-Appointed Room"/></a></div>
-                    <div class="card-body d-flex align-items-center">
-                      <div class="w-100">
-                        <p class="subtitle fw-normal text-sm mb-2">2019.3</p>
-                        <h6 class="card-title"><a class="text-decoration-none text-dark" href="user-booking-detail.html">청태산 자연휴양림</a></h6>
-                        <div class="d-flex card-subtitle">
-                          <p class="flex-grow-1 mb-0 text-muted text-sm">소나무방</p>
-                          <p class="flex-shrink-1 mb-0 card-stars text-xs text-end"><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i>
-                          </p>
+                <div class="list-group shadow mb-5 p-0">
+                  <a class="list-group-item list-group-item-action p-4" href="5user-reservation-detail.html">
+                    <div class="row">
+                      <div class="col-lg-4 align-self-center mb-4 mb-lg-0">
+                        <div class="d-flex align-items-center mb-3">
+                          <h2 class="h5 mb-0">청태산 자연휴양림</h2>
+                        </div>
+                        <p class="text-sm text-muted">강원도 횡성군 둔내면 청태산로 610</p>
+                        <p class="text-sm text-muted">02.123.4567</p>
+                        <span class="badge badge-pill p-2 badge-success-light">2019 / 11 / 11 - 2019 / 11 / 13</span>
+                      </div>
+                      <div class="col-lg-8">
+                        <div class="row">
+                          <div class="col-6 col-md-4 col-lg-4 py-3">
+                            <h6 class="label-heading">예약자</h6>
+                            <p class="text-sm fw-bold">이진</p>
+                            <h6 class="label-heading">예약자 번호</h6>
+                            <p class="text-sm fw-bold mb-0">010.1234.5678</p>
+                          </div>
+                          <div class="col-6 col-md-4 col-lg-4 py-3">
+                            <h6 class="label-heading">예약 인원</h6>
+                            <p class="text-sm fw-bold">4</p>
+                            <h6 class="label-heading">결제</h6>
+                            <p class="text-sm fw-bold mb-0">159,000</p>
+                          </div>
+                          <div class="col-12 col-lg-4 align-self-center"><span class="text-primary text-sm text-uppercase me-4 me-lg-0"><i class="fa fa-check fa-fw me-2"> </i>결제완료</span><br class="d-none d-lg-block"><span class="text-primary text-sm text-uppercase"><i class="fa fa-check fa-fw me-2"> </i>예약완료</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a> 
+                </div>
+
+                <div class="list-group shadow mb-5 p-0">
+                  <a class="list-group-item list-group-item-action p-4" href="5user-reservation-detail.html">
+                    <div class="row">
+                      <div class="col-lg-4 align-self-center mb-4 mb-lg-0">
+                        <div class="d-flex align-items-center mb-3 p-0">
+                          <h2 class="h4 mb-0">청태산 자연휴양림</h2>
+                        </div>
+                        <span class="badge badge-pill p-2 badge-success-light">2019 / 11 / 11 - 2019 / 11 / 13</span>
+                      </div>
+                      <div class="col-lg-8">
+                        <div class="row">
+                          <div class="col-6 col-md-4 col-lg-4 py-3">
+                            <h6 class="label-heading">결제</h6>
+                            <p class="text-sm fw-bold">159,000</p>
+                            <h6 class="label-heading">휴양림 번호</h6>
+                            <p class="text-sm fw-bold mb-0">02.123.4567</p>
+                          </div>
+                          <div class="col-6 col-md-4 col-lg-4 py-3">
+                            <h6 class="label-heading">예약자</h6>
+                            <p class="text-sm fw-bold">이진</p>
+                            <h6 class="label-heading">예약자 번호</h6>
+                            <p class="text-sm fw-bold mb-0">010.1234.5678</p>
+                          </div>
+                          <div class="col-12 col-lg-4 align-self-center"><span class="text-primary text-sm text-uppercase me-4 me-lg-0"><i class="fa fa-check fa-fw me-2"> </i>결제완료</span><br class="d-none d-lg-block"><span class="text-primary text-sm text-uppercase"><i class="fa fa-check fa-fw me-2"> </i>예약완료</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a> 
+                </div>
+
+                <a class="list-group-item list-group-item-action p-4" href="user-booking-detail.html">
+                  <div class="row">
+                    <div class="col-lg-4 align-self-center mb-4 mb-lg-0">
+                      <div class="d-flex align-items-center mb-3">
+                        <h2 class="h5 mb-0">청태산 자연휴양림</h2>
+                      </div>
+                      <p class="text-sm text-muted">소나무방</p><span class="badge badge-pill p-2 badge-success-light">2019 / 11 / 11 - 2019 / 11 / 13</span>
+                    </div>
+                    <div class="col-lg-8">
+                      <div class="row">
+                        <div class="col-6 col-md-4 col-lg-4 py-3">
+                          <h6 class="label-heading">체크인</h6>
+                          <p class="text-sm fw-bold">2019/11/11  3PM</p>
+                          <h6 class="label-heading">체크아웃</h6>
+                          <p class="text-sm fw-bold mb-0">2019/11/13 11AM</p>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-4 py-3">
+                          <h6 class="label-heading">예약자</h6>
+                          <p class="text-sm fw-bold">Lee jin</p>
+                          <h6 class="label-heading">예약자 번호</h6>
+                          <p class="text-sm fw-bold mb-0">010.1234.5678</p>
+                        </div>
+                        <div class="col-12 col-lg-4 align-self-center"><span class="text-primary text-sm text-uppercase me-4 me-lg-0"><i class="fa fa-check fa-fw me-2"> </i>결제완료</span><br class="d-none d-lg-block"><span class="text-primary text-sm text-uppercase"><i class="fa fa-check fa-fw me-2"> </i>예약완료</span>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
+                </a>
+              </div>
+
+              <!-- <p class="text-muted mb-5">예약된 숙소가 없습니다. 다음 여행을 계획해보세요.</p> --> 
+              
+              <p class="mb-6"> <img class="img-fluid" src="img/illustration/undraw_trip_dv9f.svg" alt="" style="width: 400px;"></p>    
+              <h4 class="mb-5">방문 완료</h4> 
+              <div class="row">
                 <!-- place item-->
                 <div class="col-xl-3 col-md-4 col-sm-6 mb-5" data-marker-id="59c0c8e33b1527bfe2abaf92">
                   <div class="card hover-animate h-100 border-0 shadow">
-                    <div class="card-img-top overflow-hidden"><a href="user-booking-detail.html"><img class="img-fluid" src="img/mountain/내장산1.jpg" alt="Modern, Well-Appointed Room"/></a></div>
+                    <div class="card-img-top overflow-hidden"><a href="5user-reservation-detail.html"><img class="img-fluid" src="img/mountain/내장산1.jpg" alt="Modern, Well-Appointed Room"/></a></div>
                     <div class="card-body d-flex align-items-center">
                       <div class="w-100">
                         <p class="subtitle fw-normal text-sm mb-2">2019 3월</p>
                         <h6 class="card-title"><a class="text-decoration-none text-dark" href="user-booking-detail.html">청태산 자연휴양림</a></h6>
                         <div class="d-flex card-subtitle">
                           <p class="flex-grow-1 mb-0 text-muted text-sm">소나무방</p>
-                          <p class="flex-shrink-1 mb-0 card-stars text-xs text-end"><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i>
+                          <p class="flex-shrink-1 mb-0 card-stars text-xs text-end">
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+                <!-- place item-->
+                <div class="col-xl-3 col-md-4 col-sm-6 mb-5" data-marker-id="59c0c8e33b1527bfe2abaf92">
+                  <div class="card hover-animate h-100 border-0 shadow">
+                    <div class="card-img-top overflow-hidden"><a href="5user-reservation-detail.html"><img class="img-fluid" src="img/mountain/내장산1.jpg" alt="Modern, Well-Appointed Room"/></a></div>
+                    <div class="card-body d-flex align-items-center">
+                      <div class="w-100">
+                        <p class="subtitle fw-normal text-sm mb-2">2019 3월</p>
+                        <h6 class="card-title"><a class="text-decoration-none text-dark" href="user-booking-detail.html">청태산 자연휴양림</a></h6>
+                        <div class="d-flex card-subtitle">
+                          <p class="flex-grow-1 mb-0 text-muted text-sm">소나무방</p>
+                          <p class="flex-shrink-1 mb-0 card-stars text-xs text-end">
                           </p>
                         </div>
                       </div>
@@ -233,48 +322,48 @@
                 <!-- place item-->
                 <div class="col-xl-3 col-md-4 col-sm-6 mb-5" data-marker-id="59c0c8e33b1527bfe2abaf92">
                   <div class="card hover-animate h-100 border-0 shadow">
-                    <div class="card-img-top overflow-hidden"><a href="user-booking-detail.html"><img class="img-fluid" src="img/mountain/내장산1.jpg" alt="Modern, Well-Appointed Room"/></a></div>
+                    <div class="card-img-top overflow-hidden"><a href="5user-reservation-detail.html"><img class="img-fluid" src="img/mountain/내장산1.jpg" alt="Modern, Well-Appointed Room"/></a></div>
                     <div class="card-body d-flex align-items-center">
                       <div class="w-100">
                         <p class="subtitle fw-normal text-sm mb-2">2019 3월</p>
                         <h6 class="card-title"><a class="text-decoration-none text-dark" href="user-booking-detail.html">청태산 자연휴양림</a></h6>
                         <div class="d-flex card-subtitle">
                           <p class="flex-grow-1 mb-0 text-muted text-sm">소나무방</p>
-                          <p class="flex-shrink-1 mb-0 card-stars text-xs text-end"><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i>
+                          <p class="flex-shrink-1 mb-0 card-stars text-xs text-end">
                           </p>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> 
                 <!-- place item-->
                 <div class="col-xl-3 col-md-4 col-sm-6 mb-5" data-marker-id="59c0c8e33b1527bfe2abaf92">
                   <div class="card hover-animate h-100 border-0 shadow">
-                    <div class="card-img-top overflow-hidden"><a href="user-booking-detail.html"><img class="img-fluid" src="img/mountain/내장산1.jpg" alt="Modern, Well-Appointed Room"/></a></div>
+                    <div class="card-img-top overflow-hidden"><a href="5user-reservation-detail.html"><img class="img-fluid" src="img/mountain/내장산1.jpg" alt="Modern, Well-Appointed Room"/></a></div>
                     <div class="card-body d-flex align-items-center">
                       <div class="w-100">
                         <p class="subtitle fw-normal text-sm mb-2">2019 3월</p>
                         <h6 class="card-title"><a class="text-decoration-none text-dark" href="user-booking-detail.html">청태산 자연휴양림</a></h6>
                         <div class="d-flex card-subtitle">
                           <p class="flex-grow-1 mb-0 text-muted text-sm">소나무방</p>
-                          <p class="flex-shrink-1 mb-0 card-stars text-xs text-end"><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i>
+                          <p class="flex-shrink-1 mb-0 card-stars text-xs text-end">
                           </p>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> 
                 <!-- place item-->
                 <div class="col-xl-3 col-md-4 col-sm-6 mb-5" data-marker-id="59c0c8e33b1527bfe2abaf92">
                   <div class="card hover-animate h-100 border-0 shadow">
-                    <div class="card-img-top overflow-hidden"><a href="user-booking-detail.html"><img class="img-fluid" src="img/mountain/내장산1.jpg" alt="Modern, Well-Appointed Room"/></a></div>
+                    <div class="card-img-top overflow-hidden"><a href="5user-reservation-detail.html"><img class="img-fluid" src="img/mountain/내장산1.jpg" alt="Modern, Well-Appointed Room"/></a></div>
                     <div class="card-body d-flex align-items-center">
                       <div class="w-100">
                         <p class="subtitle fw-normal text-sm mb-2">2019 3월</p>
                         <h6 class="card-title"><a class="text-decoration-none text-dark" href="user-booking-detail.html">청태산 자연휴양림</a></h6>
                         <div class="d-flex card-subtitle">
                           <p class="flex-grow-1 mb-0 text-muted text-sm">소나무방</p>
-                          <p class="flex-shrink-1 mb-0 card-stars text-xs text-end"><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i>
+                          <p class="flex-shrink-1 mb-0 card-stars text-xs text-end">
                           </p>
                         </div>
                       </div>
