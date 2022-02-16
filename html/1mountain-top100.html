@@ -117,75 +117,62 @@
 
     <section class="py-5">
         <div class="container">
-            <div class="d-flex justify-content-between align-items-center flex-column flex-md-row mb-5">
-                <div class="me-3">
-                    <ul class="list-inline mb-0">
-                        <li class="list-inline-item">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="type_0" name="type[]">
-                                <label class="form-check-label" for="type_0">서울시</label>
-                            </div>
-                        </li>
-                        <li class="list-inline-item">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="type_1" name="type[]">
-                                <label class="form-check-label" for="type_1">경기도</label>
-                            </div>
-                        </li>
-                        <li class="list-inline-item">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="type_2" name="type[]">
-                                <label class="form-check-label" for="type_2">강원도</label>
-                            </div>
-                        </li>
-                        <li class="list-inline-item">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="type_3" name="type[]">
-                                <label class="form-check-label" for="type_3">전라도</label>
-                            </div>
-                        </li>
-                        <li class="list-inline-item">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="type_4" name="type[]">
-                                <label class="form-check-label" for="type_4">충북</label>
-                            </div>
-                        </li>
-                    </ul>
-                    <ul class="list-inline mb-0">
-                        <li class="list-inline-item">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="type_5" name="type[]">
-                                <label class="form-check-label" for="type_5">경상도</label>
-                            </div>
-                        </li>
-                        <li class="list-inline-item">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="type_6" name="type[]">
-                                <label class="form-check-label" for="type_6">제주도</label>
-                            </div>
-                        </li>
-                        <li class="list-inline-item">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="type_7" name="type[]">
-                                <label class="form-check-label" for="type_7">전북</label>
-                            </div>
-                        </li>
-                        <li class="list-inline-item">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="type_8" name="type[]">
-                                <label class="form-check-label" for="type_8">충남</label>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-xl-7 col-md-4">
-                    <div class="input-label-absolute input-label-absolute-right" style="float: right;">
-                        <div class="label-absolute"><i class="fa fa-search"></i></div>
-                        <input class="form-control pe-4" type="search" name="search" placeholder="산 이름을 입력해주세요" id="form_search">
+            <form action="#">
+                <div class="d-flex justify-content-between align-items-center flex-column flex-md-row mb-2">
+                    <div class="row" style="width: 350px;">
+                        <div class="mb-4">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="cuisine_1" name="cuisine[]">
+                                        <label class="form-check-label" for="cuisine_1">강원도</label>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="cuisine_1" name="cuisine[]">
+                                        <label class="form-check-label" for="cuisine_1">경기도</label>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="cuisine_1" name="cuisine[]">
+                                        <label class="form-check-label" for="cuisine_1">경상도</label>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="cuisine_1" name="cuisine[]">
+                                        <label class="form-check-label" for="cuisine_1">전라도</label>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="cuisine_1" name="cuisine[]">
+                                        <label class="form-check-label" for="cuisine_1">제주도</label>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="cuisine_1" name="cuisine[]">
+                                        <label class="form-check-label" for="cuisine_1">충청도</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 col-md-2">
+                        <div class="m-2 float-lg-end">
+                            <button class="btn btn-primary" type="submit">검색</button>
+                        </div>
+                        <div class="input-label-absolute input-label-absolute-right float-lg-end m-2">
+                            <div class="label-absolute"><i class="fa fa-search"></i></div>
+                            <input class="form-control pe-6" type="search" name="search" placeholder="산 이름을 입력해주세요" id="form_search">
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row" style="overflow:auto; width:1350px; height:800px;">
+            </form>
+            <div class="row">
                 <!-- venue item-->
                 <div class="col-sm-6 col-lg-4 mb-5 hover-animate" data-marker-id="59c0c8e33b1527bfe2abaf92">
                     <div class="swiper-slide h-auto px-2">
