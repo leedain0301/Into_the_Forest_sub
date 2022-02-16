@@ -15,7 +15,7 @@ function createDetailMap(options) {
         markerPosition: [51.505, -0.09],
         markerPath: 'img/marker.svg',
         circleShow: false,
-        circleColour: '#064420',
+        circleColour: '#074c24',
         circleFill: '#8798fa',
         circleOpacity: .5,
         circleRadius: 500,

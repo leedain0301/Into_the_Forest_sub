@@ -67,7 +67,7 @@ $navbarHeight: 72px;
 } @else if $templateColour == pink and not $primary {
   $primary: #ef5285;
   @if not $secondary {
-    $secondary: #064420;
+    $secondary: #074c24;
   }
 } @else if $templateColour == green and not $primary {
   $primary: #1cb36e;
@@ -75,7 +75,7 @@ $navbarHeight: 72px;
     $secondary: #48a3e0;
   }
 } @else if $templateColour == blue and not $primary {
-  $primary: #064420;
+  $primary: #074c24;
   @if not $secondary {
     $secondary: #e83e8c;
   }

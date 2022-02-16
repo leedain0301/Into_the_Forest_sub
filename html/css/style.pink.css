@@ -34,7 +34,7 @@
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
   --bs-primary: #ef5285;
-  --bs-secondary: #064420;
+  --bs-secondary: #074c24;
   --bs-success: #35b653;
   --bs-info: #17a2b8;
   --bs-warning: #ffc107;
@@ -3176,8 +3176,8 @@ fieldset:disabled .btn {
 
 .btn-secondary {
   color: #fff;
-  background-color: #064420;
-  border-color: #064420;
+  background-color: #074c24;
+  border-color: #074c24;
 }
 
 .btn-secondary:hover {
@@ -3215,8 +3215,8 @@ fieldset:disabled .btn {
 .btn-secondary:disabled,
 .btn-secondary.disabled {
   color: #fff;
-  background-color: #064420;
-  border-color: #064420;
+  background-color: #074c24;
+  border-color: #074c24;
 }
 
 .btn-success {
@@ -3530,14 +3530,14 @@ fieldset:disabled .btn {
 }
 
 .btn-outline-secondary {
-  color: #064420;
-  border-color: #064420;
+  color: #074c24;
+  border-color: #074c24;
 }
 
 .btn-outline-secondary:hover {
   color: #fff;
-  background-color: #064420;
-  border-color: #064420;
+  background-color: #074c24;
+  border-color: #074c24;
 }
 
 .btn-check:focus + .btn-outline-secondary,
@@ -3551,8 +3551,8 @@ fieldset:disabled .btn {
 .btn-outline-secondary.active,
 .btn-outline-secondary.dropdown-toggle.show {
   color: #fff;
-  background-color: #064420;
-  border-color: #064420;
+  background-color: #074c24;
+  border-color: #074c24;
 }
 
 .btn-check:checked + .btn-outline-secondary:focus,
@@ -3565,7 +3565,7 @@ fieldset:disabled .btn {
 
 .btn-outline-secondary:disabled,
 .btn-outline-secondary.disabled {
-  color: #064420;
+  color: #074c24;
   background-color: transparent;
 }
 
@@ -7129,7 +7129,7 @@ fieldset:disabled .btn {
 }
 
 .link-secondary {
-  color: #064420;
+  color: #074c24;
 }
 
 .link-secondary:hover,
@@ -7600,7 +7600,7 @@ fieldset:disabled .btn {
 }
 
 .border-secondary {
-  border-color: #064420 !important;
+  border-color: #074c24!important;
 }
 
 .border-success {
@@ -9128,11 +9128,11 @@ fieldset:disabled .btn {
 }
 
 .text-secondary {
-  color: #064420 !important;
+  color: #074c24!important;
 }
 
 .text-secondary-hover:hover {
-  color: #064420 !important;
+  color: #074c24!important;
 }
 
 .text-success {
@@ -14775,7 +14775,7 @@ fieldset:disabled .btn {
 }
 
 .ribbon-secondary {
-  background-color: #064420 !important;
+  background-color: #074c24!important;
 }
 
 .ribbon-secondary::before {
@@ -15340,7 +15340,7 @@ body {
 }
 
 .date-picker-wrapper .month-wrapper table .day.real-today {
-  background-color: #064420;
+  background-color: #074c24;
   color: #fff !important;
   border-radius: 50%;
 }
@@ -16602,7 +16602,7 @@ button.mfp-close {
 
 .text-secondary .noUi-handle,
 .text-secondary .noUi-connect {
-  background: #064420;
+  background: #074c24;
 }
 
 .nouislider-values {
@@ -16854,7 +16854,7 @@ button.mfp-close {
 }
 
 .badge-secondary-light {
-  color: #064420;
+  color: #074c24;
   background-color: #e4e8fe;
 }
 
