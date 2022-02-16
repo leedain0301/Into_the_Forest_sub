@@ -36,21 +36,78 @@
 
 <body style="padding-top: 72px">
   <header class="header">
-    <!-- Navbar-->
-    <!-- /Navbar -->
-  </header>
-
-  <section class="d-flex align-items-center dark-overlay bg-cover"
-    style="background-image: url(img/breadcrumbs_img.jpg)">
-    <div class="container py-6 py-lg-6 text-white overlay-content text-center">
-      <div class="row">
-        <div class="col-xl-10 mx-auto">
-          <h1 class="display-5 font-weight-bold text-shadow">게시판</h1>
-          <p class="text-lg text-shadow">홈 > 게시판</p>
+    <!-- 내브바 -->
+    <nav class="navbar navbar-expand-lg fixed-top shadow navbar-light bg-white">
+      <div class="container">
+        <div class="d-flex align-items-center">
+          <a class="navbar-brand py-1" href="index.html">
+            <img src="img/logo/logo_name.png" alt="Directory logo" class="w-6rem" />
+          </a>
+        </div>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <!--  내브바 Collapse -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <form class="form-inline mt-4 mb-2 d-sm-none" action="#" id="searchcollapsed">
+            <div class="input-label-absolute input-label-absolute-left w-100">
+              <label class="label-absolute" for="searchcollapsed_search">
+                <i class="fa fa-search"></i>
+                <span class="sr-only">What are you looking for?</span>
+              </label>
+              <input class="form-control form-control-sm border-0 shadow-0 bg-gray-200" id="searchcollapsed_search"
+                placeholder="Search" aria-label="Search" type="search" />
+            </div>
+          </form>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" id="docsDropdownMenuLink" href="index.html" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">산림</a>
+              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="docsDropdownMenuLink"></div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="docsDropdownMenuLink" href="index.html" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">둘레길/자전거길</a>
+              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="docsDropdownMenuLink">
+                <a class="dropdown-item" href="docs/docs-introduction.html">둘레길</a>
+                <a class="dropdown-item" href="docs/docs-directory-structure.html">자전거길</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="docsDropdownMenuLink" href="index.html" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">휴양림</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="docsDropdownMenuLink" href="index.html" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">커뮤니티</a>
+              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="docsDropdownMenuLink">
+                <a class="dropdown-item" href="docs/docs-introduction.html">방문후기</a>
+                <a class="dropdown-item" href="docs/docs-directory-structure.html">자유게시판</a>
+                <a class="dropdown-item" href="docs/docs-gulp.html">1:1문의</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Sign in</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="signup.html">Sign up</a>
+            </li>
+          </ul>
         </div>
       </div>
+    </nav>
+  </header>
+  <!-- 경로 -->
+  <section class="d-flex align-items-center dark-overlay bg-cover"
+    style="background-image: url(img/breadcrumbs_img.jpg)">
+    <div class="container py-4 py-lg-6 text-white overlay-content text-center">
+      <h1 class="display-5 fw-bold text-shadow">현재페이지 위치</h1>
+      <p class="text-lg text-shadow">영어로 breadcrumbs라고 한대요..</p>
     </div>
   </section>
+  <!-- 메인 -->
 
   <section class="py-5">
     <div class="container">
