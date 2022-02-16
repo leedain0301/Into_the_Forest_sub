@@ -1,460 +1,544 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Directory Theme by Bootstrapious</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="all,follow">
-    <!-- Price Slider Stylesheets -->
-    <link rel="stylesheet" href="vendor/nouislider/nouislider.css">
-    <!-- Google fonts - Playfair Display-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700">
-    <!-- Google fonts - Poppins-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i,700">
-    <!-- swiper-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
-    <!-- Magnigic Popup-->
-    <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css">
-    <!-- Leaflet Maps-->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="">
-    <!-- theme stylesheet-->
-    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
-    <!-- Custom stylesheet - for your changes-->
-    <link rel="stylesheet" href="css/custom.css">
-    <!-- Favicon-->
-    <link rel="shortcut icon" href="img/favicon.png">
-    <!-- Tweaks for older IEs-->
-    <!--[if lt IE 9]>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Directory Theme by Bootstrapious</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <!-- Price Slider Stylesheets -->
+  <link rel="stylesheet" href="vendor/nouislider/nouislider.css">
+  <!-- Google fonts - Playfair Display-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700">
+  <!-- Google fonts - Poppins-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i,700">
+  <!-- swiper-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
+  <!-- Magnigic Popup-->
+  <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css">
+  <!-- Leaflet Maps-->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="">
+  <!-- theme stylesheet-->
+  <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+  <!-- Custom stylesheet - for your changes-->
+  <link rel="stylesheet" href="css/custom.css">
+  <!-- Favicon-->
+  <link rel="shortcut icon" href="img/favicon.png">
+  <!-- Tweaks for older IEs-->
+  <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
-    <!-- Font Awesome CSS-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!-- Font Awesome CSS-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 
 <body style="padding-top: 72px;">
-    <header class="header">
-    </header>
-
-    <section class="d-flex align-items-center dark-overlay bg-cover" style="background-image: url(img/breadcrumbs_img.jpg);">
-        <div class="container py-6 py-lg-6 text-white overlay-content text-center">
-            <div class="row">
-                <div class="col-xl-10 mx-auto">
-                    <h1 class="display-5 font-weight-bold text-shadow">산 검색</h1>
-                    <p class="text-lg text-shadow">홈 > 산/둘레길/등산로 > 산 검색</p>
-                </div>
-            </div>
+  <header class="header">     
+    <!-- 내브바 -->
+    <nav class="navbar navbar-expand-lg fixed-top shadow navbar-light bg-white">
+      <div class="container"> 
+        <div class="d-flex align-items-center">
+          <a class="navbar-brand py-1" href="index.html">
+            <img src="img/logo/logo_name.png" alt="Directory logo" class="w-6rem" />
+          </a>
         </div>
-    </section>
-
-    <section class="py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7 col-xl-6 px-4 pb-4 ps-xl-5 pe-xl-5">
-                    <div class="text-block">
-                        <form action="#" autocomplete="off">
-                            <div class="row">
-                                <div class="me-4">
-                                    <label class="form-label">지역선택</label>
-                                    <ul class="list-inline mb-2">
-                                        <li class="list-inline-item">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="cuisine_0" name="cuisine[]">
-                                                <label class="form-check-label" for="cuisine_0">전국</label>
-                                            </div>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="cuisine_1" name="cuisine[]">
-                                                <label class="form-check-label" for="cuisine_1">강원도</label>
-                                            </div>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="cuisine_1" name="cuisine[]">
-                                                <label class="form-check-label" for="cuisine_1">경기도</label>
-                                            </div>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="cuisine_1" name="cuisine[]">
-                                                <label class="form-check-label" for="cuisine_1">경상도</label>
-                                            </div>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="cuisine_1" name="cuisine[]">
-                                                <label class="form-check-label" for="cuisine_1">전라도</label>
-                                            </div>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="cuisine_1" name="cuisine[]">
-                                                <label class="form-check-label" for="cuisine_1">제주도</label>
-                                            </div>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="cuisine_1" name="cuisine[]">
-                                                <label class="form-check-label" for="cuisine_1">충청도</label>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-xl-9 col-md-6 mb-3">
-                                    <label class="form-label">높이 설정</label>
-                                    <div class="text-primary" id="slider-snap"></div>
-                                    <div class="nouislider-values">
-                                        <div class="min"><span id="slider-snap-value-from"></span>km</div>
-                                        <div class="max"><span id="slider-snap-value-to"></span>km</div>
-                                    </div>
-                                    <input type="hidden" name="pricefrom" id="slider-snap-input-from" value="0">
-                                    <input type="hidden" name="priceto" id="slider-snap-input-to" value="1000">
-                                </div>
-                                <div>
-                                    <div class="col-xl-6 col-md-6 mb-4 float-start">
-                                        <div class="input-label-absolute input-label-absolute-right">
-                                            <div class="label-absolute"><i class="fa fa-search"></i></div>
-                                            <input class="form-control pe-4" type="search" name="search" placeholder="산 이름을 입력하세요" id="form_search">
-                                        </div>
-                                    </div>
-                                    <div class="float-end">
-                                        <div>
-                                            <button class="btn btn-primary" type="submit"> <i class="fas fa-search me-1"></i>검색</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <br>
-                    <div class="d-flex justify-content-between align-items-center flex-column flex-md-row mb-4">
-                        <div class="me-3">
-                            <p class="mb-3 mb-md-0"><strong>12</strong> results found</p>
-                        </div>
-                        <div>
-                            <label class="form-label me-2" for="form_sort">Sort by</label>
-                            <select class="selectpicker" name="sort" id="form_sort" data-style="btn-selectpicker" title="">
-                          <option value="sortBy_0">이름순   </option>
-                          <option value="sortBy_1">높이순   </option>
-                          <option value="sortBy_2">명산만 보기   </option>
-                          <option value="sortBy_3">명산 top 100   </option>
-                        </select>
-                        </div>
-                    </div>
-                    <div class="row" style="overflow: auto; width: 600px; height: 700px;">
-                        <!-- place item-->
-                        <div class="col-sm-6 mb-5 hover-animate" data-marker-id="59c0c8e33b1527bfe2abaf92">
-                            <div class="card h-100 border-0 shadow">
-                                <div class="card-img-top overflow-hidden gradient-overlay" style="height: 10rem;"> <img class="img-fluid" src="img/top100/강천산2.jpg" alt="Modern, Well-Appointed Room" />
-                                    <!-- 클릭시 해당 산 상세페이지로 넘어가는 곳 a link -->
-                                    <a class="tile-link" href="1mountain-detail.html"></a>
-                                    <div class="card-img-overlay-bottom z-index-20">
-                                        <div>
-                                            <h5 style="color: white;">백암산</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body d-flex align-items-center">
-                                    <div class="w-100">
-                                        <h6 class="card-title"><a class="text-decoration-none text-dark" href="detail-rooms.html">대한민국 전라북도</a></h6>
-                                        <div class="d-flex card-subtitle mb-3">
-                                            <p class="flex-grow-1 mb-0 text-muted text-sm">백암산은 전라북도, 전라남도의 내장산 줄기에 있는 산이다. 암석이 모두 흰색이라 백암산이라 하였다.</p>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- place item-->
-                        <div class="col-sm-6 mb-5 hover-animate" data-marker-id="59c0c8e33b1527bfe2abaf92">
-                            <div class="card h-100 border-0 shadow">
-                                <div class="card-img-top overflow-hidden gradient-overlay" style="height: 10rem;"> <img class="img-fluid" src="img/top100/구병산.jpg" alt="Modern, Well-Appointed Room" />
-                                    <!-- 클릭시 해당 산 상세페이지로 넘어가는 곳 a link -->
-                                    <a class="tile-link" href="detail-rooms.html"></a>
-                                    <div class="card-img-overlay-bottom z-index-20">
-                                        <div>
-                                            <h5 style="color: white;">구병산</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body d-flex align-items-center">
-                                    <div class="w-100">
-                                        <h6 class="card-title"><a class="text-decoration-none text-dark" href="detail-rooms.html">대한민국 충청북도</a></h6>
-                                        <div class="d-flex card-subtitle mb-3">
-                                            <p class="flex-grow-1 mb-0 text-muted text-sm">보은군 마로면과 경상북도 상주시 화북면에 걸쳐 있는 높이 876m의 산이다.</p>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- place item-->
-                        <div class="col-sm-6 mb-5 hover-animate" data-marker-id="59c0c8e33b1527bfe2abaf92">
-                            <div class="card h-100 border-0 shadow">
-                                <div class="card-img-top overflow-hidden gradient-overlay" style="height: 10rem;"> <img class="img-fluid" src="img/top100/가지산3.jpg" alt="Modern, Well-Appointed Room" />
-                                    <!-- 클릭시 해당 산 상세페이지로 넘어가는 곳 a link -->
-                                    <a class="tile-link" href="detail-rooms.html"></a>
-                                    <div class="card-img-overlay-bottom z-index-20">
-                                        <div>
-                                            <h5 style="color: white;">가지산</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body d-flex align-items-center">
-                                    <div class="w-100">
-                                        <h6 class="card-title"><a class="text-decoration-none text-dark" href="detail-rooms.html">대한민국 울산광역시</a></h6>
-                                        <div class="d-flex card-subtitle mb-3">
-                                            <p class="flex-grow-1 mb-0 text-muted text-sm">1979년 11월 5일에 도립공원으로 지정되었다. 동쪽 산기슭에는 신라 헌덕왕 16년에 도의국사가 창건했다는 석남사가 자리 잡고 있다.</p>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- place item-->
-                        <div class="col-sm-6 mb-5 hover-animate" data-marker-id="59c0c8e33b1527bfe2abaf92">
-                            <div class="card h-100 border-0 shadow">
-                                <div class="card-img-top overflow-hidden gradient-overlay" style="height: 10rem;"> <img class="img-fluid" src="img/top100/공작산.jpg" alt="Modern, Well-Appointed Room" />
-                                    <!-- 클릭시 해당 산 상세페이지로 넘어가는 곳 a link -->
-                                    <a class="tile-link" href="detail-rooms.html"></a>
-                                    <div class="card-img-overlay-bottom z-index-20">
-                                        <div>
-                                            <h5 style="color: white;">공작산</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body d-flex align-items-center">
-                                    <div class="w-100">
-                                        <h6 class="card-title"><a class="text-decoration-none text-dark" href="detail-rooms.html">대한민국 강원도</a></h6>
-                                        <div class="d-flex card-subtitle mb-3">
-                                            <p class="flex-grow-1 mb-0 text-muted text-sm">높이 887m의 산이다. 이곳 산기슭에는 수타사가 있다.</p>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- place item-->
-                        <div class="col-sm-6 mb-5 hover-animate" data-marker-id="59c0c8e33b1527bfe2abaf92">
-                            <div class="card h-100 border-0 shadow">
-                                <div class="card-img-top overflow-hidden gradient-overlay" style="height: 10rem;"> <img class="img-fluid" src="img/top100/계룡산3.jpg" alt="Modern, Well-Appointed Room" />
-                                    <!-- 클릭시 해당 산 상세페이지로 넘어가는 곳 a link -->
-                                    <a class="tile-link" href="detail-rooms.html"></a>
-                                    <div class="card-img-overlay-bottom z-index-20">
-                                        <div>
-                                            <h5 style="color: white;">계룡산</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body d-flex align-items-center">
-                                    <div class="w-100">
-                                        <h6 class="card-title"><a class="text-decoration-none text-dark" href="detail-rooms.html">대한민국 충청남도 </a></h6>
-                                        <div class="d-flex card-subtitle mb-3">
-                                            <p class="flex-grow-1 mb-0 text-muted text-sm">1968년 12월 31일에 2번째 국립공원으로 지정되었다. 계룡산은 충청지역에서 대표적인 산이나 높이나 면적에서 최고나 최대는 아니다.</p>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- place item-->
-                        <div class="col-sm-6 mb-5 hover-animate" data-marker-id="59c0c8e33b1527bfe2abaf92">
-                            <div class="card h-100 border-0 shadow">
-                                <div class="card-img-top overflow-hidden gradient-overlay" style="height: 10rem;"> <img class="img-fluid" src="img/top100/대암산3.jpg" alt="Modern, Well-Appointed Room" />
-                                    <!-- 클릭시 해당 산 상세페이지로 넘어가는 곳 a link -->
-                                    <a class="tile-link" href="detail-rooms.html"></a>
-                                    <div class="card-img-overlay-bottom z-index-20">
-                                        <div>
-                                            <h5 style="color: white;">대암산</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body d-flex align-items-center">
-                                    <div class="w-100">
-                                        <h6 class="card-title"><a class="text-decoration-none text-dark" href="detail-rooms.html">대한민국 강원도 </a></h6>
-                                        <div class="d-flex card-subtitle mb-3">
-                                            <p class="flex-grow-1 mb-0 text-muted text-sm">높이 1,310m의 산이다. 대우산과 함께 대암산·대우산 천연보호구역으로 지정되었으며, 지정된 지역은 분지·습원등 지형적으로 다양한 특징을 지니고 있고, 기후 조건이 특이하여 희귀 동·식물이 서식하고 있다.</p>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-xl-6 pe-lg-0">
-                    <div class="map-wrapper-450 h-100" id="detailSideMap"></div>
-                </div>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <!--  내브바 Collapse -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <form class="form-inline mt-4 mb-2 d-sm-none" action="#" id="searchcollapsed">
+            <div class="input-label-absolute input-label-absolute-left w-100">
+              <label class="label-absolute" for="searchcollapsed_search">
+                <i class="fa fa-search"></i>
+                <span class="sr-only">What are you looking for?</span>
+              </label>
+              <input class="form-control form-control-sm border-0 shadow-0 bg-gray-200" id="searchcollapsed_search" placeholder="Search" aria-label="Search" type="search" />
             </div>
+          </form>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" id="docsDropdownMenuLink" href="index.html" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">산림</a>
+              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="docsDropdownMenuLink"></div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="docsDropdownMenuLink" href="index.html" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">둘레길/자전거길</a>
+              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="docsDropdownMenuLink">
+                <a class="dropdown-item" href="docs/docs-introduction.html">둘레길</a>
+                <a class="dropdown-item" href="docs/docs-directory-structure.html">자전거길</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="docsDropdownMenuLink" href="index.html" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">휴양림</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="docsDropdownMenuLink" href="index.html" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">커뮤니티</a>
+              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="docsDropdownMenuLink">
+                <a class="dropdown-item" href="docs/docs-introduction.html">방문후기</a>
+                <a class="dropdown-item" href="docs/docs-directory-structure.html">자유게시판</a>
+                <a class="dropdown-item" href="docs/docs-gulp.html">1:1문의</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Sign in</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="signup.html">Sign up</a>
+            </li>
+          </ul>
         </div>
-    </section>
+      </div>
+    </nav>
+  </header>
+  <!-- 경로 -->
+  <section class="d-flex align-items-center dark-overlay bg-cover"
+    style="background-image: url(img/breadcrumbs_img.jpg)">
+    <div class="container py-4 py-lg-6 text-white overlay-content text-center">
+      <h1 class="display-5 fw-bold text-shadow">산림</h1>
+      <p class="text-lg text-shadow">홈 - 산림</p>
+    </div>
+  </section>
+  <!-- 메인 -->
 
-    <!-- Footer-->
-    <footer class="position-relative z-index-10 d-print-none">
-        <!-- Main block - menus, subscribe form-->
-        <div class="py-6 bg-gray-200 text-muted">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <div class="fw-bold text-uppercase text-dark mb-3">Directory</div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                        <ul class="list-inline">
-                            <li class="list-inline-item"><a class="text-muted text-primary-hover" href="#" target="_blank" title="twitter"><i class="fab fa-twitter"></i></a></li>
-                            <li class="list-inline-item"><a class="text-muted text-primary-hover" href="#" target="_blank" title="facebook"><i class="fab fa-facebook"></i></a></li>
-                            <li class="list-inline-item"><a class="text-muted text-primary-hover" href="#" target="_blank" title="instagram"><i class="fab fa-instagram"></i></a></li>
-                            <li class="list-inline-item"><a class="text-muted text-primary-hover" href="#" target="_blank" title="pinterest"><i class="fab fa-pinterest"></i></a></li>
-                            <li class="list-inline-item"><a class="text-muted text-primary-hover" href="#" target="_blank" title="vimeo"><i class="fab fa-vimeo"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
-                        <h6 class="text-uppercase text-dark mb-3">Rentals</h6>
-                        <ul class="list-unstyled">
-                            <li><a class="text-muted" href="index.html">Rooms</a></li>
-                            <li><a class="text-muted" href="category-rooms.html">Map on top</a></li>
-                            <li><a class="text-muted" href="category-2-rooms.html">Side map</a></li>
-                            <li><a class="text-muted" href="category-3-rooms.html">No map</a></li>
-                            <li><a class="text-muted" href="detail-rooms.html">Room detail</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
-                        <h6 class="text-uppercase text-dark mb-3">Pages</h6>
-                        <ul class="list-unstyled">
-                            <li><a class="text-muted" href="compare.html">Comparison                                   </a></li>
-                            <li><a class="text-muted" href="team.html">Team                                   </a></li>
-                            <li><a class="text-muted" href="contact.html">Contact                                   </a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4">
-                        <h6 class="text-uppercase text-dark mb-3">Daily Offers & Discounts</h6>
-                        <p class="mb-3"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. At itaque temporibus.</p>
-                        <form action="#" id="newsletter-form">
-                            <div class="input-group mb-3">
-                                <input class="form-control bg-transparent border-dark border-end-0" type="email" placeholder="Your Email Address" aria-label="Your Email Address">
-                                <button class="btn btn-outline-dark border-start-0" type="submit"> <i class="fa fa-paper-plane text-lg"></i></button>
-                            </div>
-                        </form>
-                    </div>
+  <section class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 col-xl-6 px-4 pb-4 ps-xl-5 pe-xl-5">
+          <div class="text-block">
+            <form action="#" autocomplete="off">
+              <div class="row">
+                <div class="me-4">
+                  <label class="form-label">지역선택</label>
+                  <ul class="list-inline mb-2">
+                    <li class="list-inline-item">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="cuisine_0" name="cuisine[]">
+                        <label class="form-check-label" for="cuisine_0">전국</label>
+                      </div>
+                    </li>
+                    <li class="list-inline-item">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="cuisine_1" name="cuisine[]">
+                        <label class="form-check-label" for="cuisine_1">강원도</label>
+                      </div>
+                    </li>
+                    <li class="list-inline-item">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="cuisine_1" name="cuisine[]">
+                        <label class="form-check-label" for="cuisine_1">경기도</label>
+                      </div>
+                    </li>
+                    <li class="list-inline-item">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="cuisine_1" name="cuisine[]">
+                        <label class="form-check-label" for="cuisine_1">경상도</label>
+                      </div>
+                    </li>
+                    <li class="list-inline-item">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="cuisine_1" name="cuisine[]">
+                        <label class="form-check-label" for="cuisine_1">전라도</label>
+                      </div>
+                    </li>
+                    <li class="list-inline-item">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="cuisine_1" name="cuisine[]">
+                        <label class="form-check-label" for="cuisine_1">제주도</label>
+                      </div>
+                    </li>
+                    <li class="list-inline-item">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="cuisine_1" name="cuisine[]">
+                        <label class="form-check-label" for="cuisine_1">충청도</label>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
-            </div>
-        </div>
-        <!-- Copyright section of the footer-->
-        <div class="py-4 fw-light bg-gray-800 text-gray-300">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6 text-center text-md-start">
-                        <p class="text-sm mb-md-0">&copy; 2021, Your company. All rights reserved.</p>
-                    </div>
-                    <div class="col-md-6">
-                        <ul class="list-inline mb-0 mt-2 mt-md-0 text-center text-md-end">
-                            <li class="list-inline-item"><img class="w-2rem" src="img/visa.svg" alt="..."></li>
-                            <li class="list-inline-item"><img class="w-2rem" src="img/mastercard.svg" alt="..."></li>
-                            <li class="list-inline-item"><img class="w-2rem" src="img/paypal.svg" alt="..."></li>
-                            <li class="list-inline-item"><img class="w-2rem" src="img/western-union.svg" alt="..."></li>
-                        </ul>
-                    </div>
+                <div class="col-xl-9 col-md-6 mb-3">
+                  <label class="form-label">높이 설정</label>
+                  <div class="text-primary" id="slider-snap"></div>
+                  <div class="nouislider-values">
+                    <div class="min"><span id="slider-snap-value-from"></span>km</div>
+                    <div class="max"><span id="slider-snap-value-to"></span>km</div>
+                  </div>
+                  <input type="hidden" name="pricefrom" id="slider-snap-input-from" value="0">
+                  <input type="hidden" name="priceto" id="slider-snap-input-to" value="1000">
                 </div>
+                <div>
+                  <div class="col-xl-6 col-md-6 mb-4 float-start">
+                    <div class="input-label-absolute input-label-absolute-right">
+                      <div class="label-absolute"><i class="fa fa-search"></i></div>
+                      <input class="form-control pe-4" type="search" name="search" placeholder="산 이름을 입력하세요"
+                        id="form_search">
+                    </div>
+                  </div>
+                  <div class="float-end">
+                    <div>
+                      <button class="btn btn-primary" type="submit"> <i class="fas fa-search me-1"></i>검색</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <br>
+          <div class="d-flex justify-content-between align-items-center flex-column flex-md-row mb-4">
+            <div class="me-3">
+              <p class="mb-3 mb-md-0"><strong>12</strong> results found</p>
             </div>
+            <div>
+              <label class="form-label me-2" for="form_sort">Sort by</label>
+              <select class="selectpicker" name="sort" id="form_sort" data-style="btn-selectpicker" title="">
+                <option value="sortBy_0">이름순 </option>
+                <option value="sortBy_1">높이순 </option>
+                <option value="sortBy_2">명산만 보기 </option>
+                <option value="sortBy_3">명산 top 100 </option>
+              </select>
+            </div>
+          </div>
+          <div class="row" style="overflow: auto; width: 600px; height: 700px;">
+            <!-- place item-->
+            <div class="col-sm-6 mb-5 hover-animate" data-marker-id="59c0c8e33b1527bfe2abaf92">
+              <div class="card h-100 border-0 shadow">
+                <div class="card-img-top overflow-hidden gradient-overlay" style="height: 10rem;"> <img
+                    class="img-fluid" src="img/top100/강천산2.jpg" alt="Modern, Well-Appointed Room" />
+                  <!-- 클릭시 해당 산 상세페이지로 넘어가는 곳 a link -->
+                  <a class="tile-link" href="1mountain-detail.html"></a>
+                  <div class="card-img-overlay-bottom z-index-20">
+                    <div>
+                      <h5 style="color: white;">백암산</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body d-flex align-items-center">
+                  <div class="w-100">
+                    <h6 class="card-title"><a class="text-decoration-none text-dark" href="detail-rooms.html">대한민국
+                        전라북도</a></h6>
+                    <div class="d-flex card-subtitle mb-3">
+                      <p class="flex-grow-1 mb-0 text-muted text-sm">백암산은 전라북도, 전라남도의 내장산 줄기에 있는 산이다. 암석이 모두 흰색이라 백암산이라
+                        하였다.</p>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- place item-->
+            <div class="col-sm-6 mb-5 hover-animate" data-marker-id="59c0c8e33b1527bfe2abaf92">
+              <div class="card h-100 border-0 shadow">
+                <div class="card-img-top overflow-hidden gradient-overlay" style="height: 10rem;"> <img
+                    class="img-fluid" src="img/top100/구병산.jpg" alt="Modern, Well-Appointed Room" />
+                  <!-- 클릭시 해당 산 상세페이지로 넘어가는 곳 a link -->
+                  <a class="tile-link" href="detail-rooms.html"></a>
+                  <div class="card-img-overlay-bottom z-index-20">
+                    <div>
+                      <h5 style="color: white;">구병산</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body d-flex align-items-center">
+                  <div class="w-100">
+                    <h6 class="card-title"><a class="text-decoration-none text-dark" href="detail-rooms.html">대한민국
+                        충청북도</a></h6>
+                    <div class="d-flex card-subtitle mb-3">
+                      <p class="flex-grow-1 mb-0 text-muted text-sm">보은군 마로면과 경상북도 상주시 화북면에 걸쳐 있는 높이 876m의 산이다.</p>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- place item-->
+            <div class="col-sm-6 mb-5 hover-animate" data-marker-id="59c0c8e33b1527bfe2abaf92">
+              <div class="card h-100 border-0 shadow">
+                <div class="card-img-top overflow-hidden gradient-overlay" style="height: 10rem;"> <img
+                    class="img-fluid" src="img/top100/가지산3.jpg" alt="Modern, Well-Appointed Room" />
+                  <!-- 클릭시 해당 산 상세페이지로 넘어가는 곳 a link -->
+                  <a class="tile-link" href="detail-rooms.html"></a>
+                  <div class="card-img-overlay-bottom z-index-20">
+                    <div>
+                      <h5 style="color: white;">가지산</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body d-flex align-items-center">
+                  <div class="w-100">
+                    <h6 class="card-title"><a class="text-decoration-none text-dark" href="detail-rooms.html">대한민국
+                        울산광역시</a></h6>
+                    <div class="d-flex card-subtitle mb-3">
+                      <p class="flex-grow-1 mb-0 text-muted text-sm">1979년 11월 5일에 도립공원으로 지정되었다. 동쪽 산기슭에는 신라 헌덕왕 16년에
+                        도의국사가 창건했다는 석남사가 자리 잡고 있다.</p>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- place item-->
+            <div class="col-sm-6 mb-5 hover-animate" data-marker-id="59c0c8e33b1527bfe2abaf92">
+              <div class="card h-100 border-0 shadow">
+                <div class="card-img-top overflow-hidden gradient-overlay" style="height: 10rem;"> <img
+                    class="img-fluid" src="img/top100/공작산.jpg" alt="Modern, Well-Appointed Room" />
+                  <!-- 클릭시 해당 산 상세페이지로 넘어가는 곳 a link -->
+                  <a class="tile-link" href="detail-rooms.html"></a>
+                  <div class="card-img-overlay-bottom z-index-20">
+                    <div>
+                      <h5 style="color: white;">공작산</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body d-flex align-items-center">
+                  <div class="w-100">
+                    <h6 class="card-title"><a class="text-decoration-none text-dark" href="detail-rooms.html">대한민국
+                        강원도</a></h6>
+                    <div class="d-flex card-subtitle mb-3">
+                      <p class="flex-grow-1 mb-0 text-muted text-sm">높이 887m의 산이다. 이곳 산기슭에는 수타사가 있다.</p>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- place item-->
+            <div class="col-sm-6 mb-5 hover-animate" data-marker-id="59c0c8e33b1527bfe2abaf92">
+              <div class="card h-100 border-0 shadow">
+                <div class="card-img-top overflow-hidden gradient-overlay" style="height: 10rem;"> <img
+                    class="img-fluid" src="img/top100/계룡산3.jpg" alt="Modern, Well-Appointed Room" />
+                  <!-- 클릭시 해당 산 상세페이지로 넘어가는 곳 a link -->
+                  <a class="tile-link" href="detail-rooms.html"></a>
+                  <div class="card-img-overlay-bottom z-index-20">
+                    <div>
+                      <h5 style="color: white;">계룡산</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body d-flex align-items-center">
+                  <div class="w-100">
+                    <h6 class="card-title"><a class="text-decoration-none text-dark" href="detail-rooms.html">대한민국 충청남도
+                      </a></h6>
+                    <div class="d-flex card-subtitle mb-3">
+                      <p class="flex-grow-1 mb-0 text-muted text-sm">1968년 12월 31일에 2번째 국립공원으로 지정되었다. 계룡산은 충청지역에서 대표적인
+                        산이나 높이나 면적에서 최고나 최대는 아니다.</p>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- place item-->
+            <div class="col-sm-6 mb-5 hover-animate" data-marker-id="59c0c8e33b1527bfe2abaf92">
+              <div class="card h-100 border-0 shadow">
+                <div class="card-img-top overflow-hidden gradient-overlay" style="height: 10rem;"> <img
+                    class="img-fluid" src="img/top100/대암산3.jpg" alt="Modern, Well-Appointed Room" />
+                  <!-- 클릭시 해당 산 상세페이지로 넘어가는 곳 a link -->
+                  <a class="tile-link" href="detail-rooms.html"></a>
+                  <div class="card-img-overlay-bottom z-index-20">
+                    <div>
+                      <h5 style="color: white;">대암산</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body d-flex align-items-center">
+                  <div class="w-100">
+                    <h6 class="card-title"><a class="text-decoration-none text-dark" href="detail-rooms.html">대한민국 강원도
+                      </a></h6>
+                    <div class="d-flex card-subtitle mb-3">
+                      <p class="flex-grow-1 mb-0 text-muted text-sm">높이 1,310m의 산이다. 대우산과 함께 대암산·대우산 천연보호구역으로 지정되었으며,
+                        지정된 지역은 분지·습원등 지형적으로 다양한 특징을 지니고 있고, 기후 조건이 특이하여 희귀 동·식물이 서식하고 있다.</p>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </footer>
-    <!-- JavaScript files-->
-    <script>
-        // ------------------------------------------------------- //
-        //   Inject SVG Sprite - 
-        //   see more here 
-        //   https://css-tricks.com/ajaxing-svg-sprite/
-        // ------------------------------------------------------ //
-        function injectSvgSprite(path) {
+        <div class="col-lg-6 col-xl-6 pe-lg-0">
+          <div class="map-wrapper-450 h-100" id="detailSideMap"></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-            var ajax = new XMLHttpRequest();
-            ajax.open("GET", path, true);
-            ajax.send();
-            ajax.onload = function(e) {
-                var div = document.createElement("div");
-                div.className = 'd-none';
-                div.innerHTML = ajax.responseText;
-                document.body.insertBefore(div, document.body.childNodes[0]);
-            }
-        }
-        // to avoid CORS issues when viewing using file:// protocol, using the demo URL for the SVG sprite
-        // use your own URL in production, please :)
-        // https://demo.bootstrapious.com/directory/1-0/icons/orion-svg-sprite.svg
-        //- injectSvgSprite('${path}icons/orion-svg-sprite.svg'); 
-        injectSvgSprite('https://demo.bootstrapious.com/directory/1-4/icons/orion-svg-sprite.svg');
-    </script>
-    <!-- jQuery-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <!-- Bootstrap JS bundle - Bootstrap + PopperJS-->
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- Magnific Popup - Lightbox for the gallery-->
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-    <!-- Smooth scroll-->
-    <script src="vendor/smooth-scroll/smooth-scroll.polyfills.min.js"></script>
-    <!-- Bootstrap Select-->
-    <script src="vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
-    <!-- Object Fit Images - Fallback for browsers that don't support object-fit-->
-    <script src="vendor/object-fit-images/ofi.min.js"></script>
-    <!-- Swiper Carousel                       -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
-    <script>
-        var basePath = ''
-    </script>
-    <!-- Main Theme JS file    -->
-    <script src="js/theme.js"></script>
-    <!-- Map-->
-    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
-    <!-- Available tile layers-->
-    <script src="js/map-layers.js">
-    </script>
-    <script src="js/map-detail.js">
-    </script>
-    <script>
-        createDetailMap({
-            mapId: 'detailSideMap',
-            mapZoom: 18,
-            mapCenter: [40.732346, -74.0014247],
-            markerShow: true,
-            markerPosition: [40.732346, -74.0014247],
-            markerPath: 'img/marker.svg',
-        })
-    </script>
-    <!-- Daterange picker-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-date-range-picker/0.19.0/jquery.daterangepicker.min.js">
-    </script>
-    <script src="js/datepicker-category.js">
-    </script>
-    <!-- Price Slider-->
-    <script src="vendor/nouislider/nouislider.min.js"></script>
-    <script>
-        var snapSlider = document.getElementById('slider-snap');
+  <!-- Footer-->
+  <footer class="position-relative z-index-10 d-print-none">
+    <!-- Main block - menus, subscribe form-->
+    <div class="py-6 bg-gray-200 text-muted">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <div class="fw-bold text-uppercase text-dark mb-3">Directory</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <ul class="list-inline">
+              <li class="list-inline-item"><a class="text-muted text-primary-hover" href="#" target="_blank"
+                  title="twitter"><i class="fab fa-twitter"></i></a></li>
+              <li class="list-inline-item"><a class="text-muted text-primary-hover" href="#" target="_blank"
+                  title="facebook"><i class="fab fa-facebook"></i></a></li>
+              <li class="list-inline-item"><a class="text-muted text-primary-hover" href="#" target="_blank"
+                  title="instagram"><i class="fab fa-instagram"></i></a></li>
+              <li class="list-inline-item"><a class="text-muted text-primary-hover" href="#" target="_blank"
+                  title="pinterest"><i class="fab fa-pinterest"></i></a></li>
+              <li class="list-inline-item"><a class="text-muted text-primary-hover" href="#" target="_blank"
+                  title="vimeo"><i class="fab fa-vimeo"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
+            <h6 class="text-uppercase text-dark mb-3">Rentals</h6>
+            <ul class="list-unstyled">
+              <li><a class="text-muted" href="index.html">Rooms</a></li>
+              <li><a class="text-muted" href="category-rooms.html">Map on top</a></li>
+              <li><a class="text-muted" href="category-2-rooms.html">Side map</a></li>
+              <li><a class="text-muted" href="category-3-rooms.html">No map</a></li>
+              <li><a class="text-muted" href="detail-rooms.html">Room detail</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
+            <h6 class="text-uppercase text-dark mb-3">Pages</h6>
+            <ul class="list-unstyled">
+              <li><a class="text-muted" href="compare.html">Comparison </a></li>
+              <li><a class="text-muted" href="team.html">Team </a></li>
+              <li><a class="text-muted" href="contact.html">Contact </a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <h6 class="text-uppercase text-dark mb-3">Daily Offers & Discounts</h6>
+            <p class="mb-3"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. At itaque temporibus.</p>
+            <form action="#" id="newsletter-form">
+              <div class="input-group mb-3">
+                <input class="form-control bg-transparent border-dark border-end-0" type="email"
+                  placeholder="Your Email Address" aria-label="Your Email Address">
+                <button class="btn btn-outline-dark border-start-0" type="submit"> <i
+                    class="fa fa-paper-plane text-lg"></i></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Copyright section of the footer-->
+    <div class="py-4 fw-light bg-gray-800 text-gray-300">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start">
+            <p class="text-sm mb-md-0">&copy; 2021, Your company. All rights reserved.</p>
+          </div>
+          <div class="col-md-6">
+            <ul class="list-inline mb-0 mt-2 mt-md-0 text-center text-md-end">
+              <li class="list-inline-item"><img class="w-2rem" src="img/visa.svg" alt="..."></li>
+              <li class="list-inline-item"><img class="w-2rem" src="img/mastercard.svg" alt="..."></li>
+              <li class="list-inline-item"><img class="w-2rem" src="img/paypal.svg" alt="..."></li>
+              <li class="list-inline-item"><img class="w-2rem" src="img/western-union.svg" alt="..."></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- JavaScript files-->
+  <script>
+    // ------------------------------------------------------- //
+    //   Inject SVG Sprite - 
+    //   see more here 
+    //   https://css-tricks.com/ajaxing-svg-sprite/
+    // ------------------------------------------------------ //
+    function injectSvgSprite(path) {
 
-        noUiSlider.create(snapSlider, {
-            start: [0, 1000],
-            snap: false,
-            connect: true,
-            step: 1,
-            range: {
-                'min': 0,
-                'max': 1000
-            }
-        });
-        var snapValues = [
-            document.getElementById('slider-snap-value-from'),
-            document.getElementById('slider-snap-value-to')
-        ];
-        var inputValues = [
-            document.getElementById('slider-snap-input-from'),
-            document.getElementById('slider-snap-input-to')
-        ];
-        snapSlider.noUiSlider.on('update', function(values, handle) {
-            snapValues[handle].innerHTML = values[handle];
-            inputValues[handle].value = values[handle];
-        })
-    </script>
+      var ajax = new XMLHttpRequest();
+      ajax.open("GET", path, true);
+      ajax.send();
+      ajax.onload = function (e) {
+        var div = document.createElement("div");
+        div.className = 'd-none';
+        div.innerHTML = ajax.responseText;
+        document.body.insertBefore(div, document.body.childNodes[0]);
+      }
+    }
+    // to avoid CORS issues when viewing using file:// protocol, using the demo URL for the SVG sprite
+    // use your own URL in production, please :)
+    // https://demo.bootstrapious.com/directory/1-0/icons/orion-svg-sprite.svg
+    //- injectSvgSprite('${path}icons/orion-svg-sprite.svg'); 
+    injectSvgSprite('https://demo.bootstrapious.com/directory/1-4/icons/orion-svg-sprite.svg');
+  </script>
+  <!-- jQuery-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <!-- Bootstrap JS bundle - Bootstrap + PopperJS-->
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Magnific Popup - Lightbox for the gallery-->
+  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <!-- Smooth scroll-->
+  <script src="vendor/smooth-scroll/smooth-scroll.polyfills.min.js"></script>
+  <!-- Bootstrap Select-->
+  <script src="vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
+  <!-- Object Fit Images - Fallback for browsers that don't support object-fit-->
+  <script src="vendor/object-fit-images/ofi.min.js"></script>
+  <!-- Swiper Carousel                       -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+  <script>
+    var basePath = ''
+  </script>
+  <!-- Main Theme JS file    -->
+  <script src="js/theme.js"></script>
+  <!-- Map-->
+  <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+    integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+    crossorigin=""></script>
+  <!-- Available tile layers-->
+  <script src="js/map-layers.js">
+  </script>
+  <script src="js/map-detail.js">
+  </script>
+  <script>
+    createDetailMap({
+      mapId: 'detailSideMap',
+      mapZoom: 18,
+      mapCenter: [40.732346, -74.0014247],
+      markerShow: true,
+      markerPosition: [40.732346, -74.0014247],
+      markerPath: 'img/marker.svg',
+    })
+  </script>
+  <!-- Daterange picker-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-date-range-picker/0.19.0/jquery.daterangepicker.min.js">
+  </script>
+  <script src="js/datepicker-category.js">
+  </script>
+  <!-- Price Slider-->
+  <script src="vendor/nouislider/nouislider.min.js"></script>
+  <script>
+    var snapSlider = document.getElementById('slider-snap');
+
+    noUiSlider.create(snapSlider, {
+      start: [0, 1000],
+      snap: false,
+      connect: true,
+      step: 1,
+      range: {
+        'min': 0,
+        'max': 1000
+      }
+    });
+    var snapValues = [
+      document.getElementById('slider-snap-value-from'),
+      document.getElementById('slider-snap-value-to')
+    ];
+    var inputValues = [
+      document.getElementById('slider-snap-input-from'),
+      document.getElementById('slider-snap-input-to')
+    ];
+    snapSlider.noUiSlider.on('update', function (values, handle) {
+      snapValues[handle].innerHTML = values[handle];
+      inputValues[handle].value = values[handle];
+    })
+  </script>
 </body>
 
 </html>
