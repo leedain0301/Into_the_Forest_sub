@@ -100,7 +100,8 @@
     </nav>
   </header>
   <!-- 경로 -->
-  <section class="d-flex align-items-center dark-overlay bg-cover" style="background-image: url(img/breadcrumbs_img.jpg)">
+  <section class="d-flex align-items-center dark-overlay bg-cover"
+    style="background-image: url(img/breadcrumbs_img.jpg)">
     <div class="container py-4 py-lg-6 text-white overlay-content text-center">
       <h1 class="display-5 fw-bold text-shadow">자유게시판</h1>
       <p class="text-lg text-shadow">홈 - 커뮤니티 - 자유게시판</p>
@@ -111,18 +112,25 @@
     <div class="container">
       <div class="table-responsive mb-4">
         <table class="table text-gray-700 table-striped table-hover">
-          <a class="btn btn-primary mb-4 float-end ps-3" href="#">글쓰기</a>
-          <div class="col-xl-5 col-md-4 mb-2" style="margin: 0px auto">
-            <div class="input-label-absolute input-label-absolute-right">
-              <div class="label-absolute"><i class="fa fa-search"></i></div>
-              <input class="form-control" type="search" name="search" placeholder="검색어를 입력하세요." id="form_search" />
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="">
+              <p class="mb-md-0 fs-5"><i class="fa fa-clipboard-list me-1"></i>&nbsp총
+                게시글<strong>&nbsp&nbsp12</strong> 개</p>
             </div>
+            <div class="col-md-4" style="margin: 0px auto">
+              <div class="input-label-absolute input-label-absolute-right">
+                <div class="label-absolute"><i class="fa fa-search"></i></div>
+                <input class="form-control" type="search" name="search" placeholder="검색어를 입력하세요." id="form_search" />
+              </div>
+            </div>
+            <div></div><a class="btn btn-primary float-end ps-3" href="#"><i class="fa-pen fa me-1"></i>글쓰기</a>
+          </div>
           </div>
           <tr>
-            <th class="py-4 text-center align-middle">게시판 번호</th>
-            <th class="py-4 text-center align-middle">작성자</th>
-            <th class="py-4 text-center align-middle">제목</th>
-            <th class="py-4 text-center align-middle">날짜</th>
+            <th class="py-4 text-center align-middle text-gray-800">게시판 번호</th>
+            <th class="py-4 text-center align-middle text-gray-800">작성자</th>
+            <th class="py-4 text-center align-middle text-gray-800">제목</th>
+            <th class="py-4 text-center align-middle text-gray-800">날짜</th>
           </tr>
           <tr>
             <td class="py-4 text-center align-middle">1</td>
@@ -163,7 +171,7 @@
               난이도 낮은 산 추천해주세요
             </td>
             <td class="py-4 text-center align-middle">2022.02.18</td>
-          </tr>          
+          </tr>
         </table>
       </div>
       <nav aria-label="Page navigation example">

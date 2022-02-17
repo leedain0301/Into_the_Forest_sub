@@ -34,10 +34,10 @@
 </head>
 
 <body style="padding-top: 72px">
-  <header class="header">     
+  <header class="header">
     <!-- 내브바 -->
     <nav class="navbar navbar-expand-lg fixed-top shadow navbar-light bg-white">
-      <div class="container"> 
+      <div class="container">
         <div class="d-flex align-items-center">
           <a class="navbar-brand py-1" href="index.html">
             <img src="img/logo/logo_name.png" alt="Directory logo" class="w-6rem" />
@@ -56,26 +56,31 @@
                 <i class="fa fa-search"></i>
                 <span class="sr-only">What are you looking for?</span>
               </label>
-              <input class="form-control form-control-sm border-0 shadow-0 bg-gray-200" id="searchcollapsed_search" placeholder="Search" aria-label="Search" type="search" />
+              <input class="form-control form-control-sm border-0 shadow-0 bg-gray-200" id="searchcollapsed_search"
+                placeholder="Search" aria-label="Search" type="search" />
             </div>
           </form>
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link fs-6" id="docsDropdownMenuLink" href="index.html" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">산림</a>
+              <a class="nav-link fs-6" id="docsDropdownMenuLink" href="index.html" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">산림</a>
               <div class="dropdown-menu dropdown-menu-end" aria-labelledby="docsDropdownMenuLink"></div>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle fs-6" id="docsDropdownMenuLink" href="index.html" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">둘레길/자전거길</a>
+              <a class="nav-link dropdown-toggle fs-6" id="docsDropdownMenuLink" href="index.html"
+                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">둘레길/자전거길</a>
               <div class="dropdown-menu dropdown-menu-end" aria-labelledby="docsDropdownMenuLink">
                 <a class="dropdown-item" href="docs/docs-introduction.html">둘레길</a>
                 <a class="dropdown-item" href="docs/docs-directory-structure.html">자전거길</a>
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-6" id="docsDropdownMenuLink" href="index.html" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">휴양림</a>
+              <a class="nav-link fs-6" id="docsDropdownMenuLink" href="index.html" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">휴양림</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle fs-6" id="docsDropdownMenuLink" href="index.html" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">커뮤니티</a>
+              <a class="nav-link dropdown-toggle fs-6" id="docsDropdownMenuLink" href="index.html"
+                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">커뮤니티</a>
               <div class="dropdown-menu dropdown-menu-end" aria-labelledby="docsDropdownMenuLink">
                 <a class="dropdown-item" href="docs/docs-introduction.html">방문후기</a>
                 <a class="dropdown-item" href="docs/docs-directory-structure.html">자유게시판</a>
@@ -97,61 +102,65 @@
   <section class="d-flex align-items-center dark-overlay bg-cover"
     style="background-image: url(img/breadcrumbs_img.jpg)">
     <div class="container py-4 py-lg-6 text-white overlay-content text-center">
-      <h1 class="display-5 fw-bold text-shadow">자주 묻는 질문</h1>
+      <h1 class="display-5 fw-bold text-shadow">게시판</h1>
       <p class="text-lg text-shadow">커뮤니티 - 1:1문의 - FAQ</p>
     </div>
   </section>
-  <!-- 메인 -->  
+  <!-- 메인 -->
   <section class="py-6">
     <div class="container">
       <div class="row">
-        <div class="d-flex justify-content-center align-items-center mb-4">
-          <h1 class="hero-heading mb-0">자주 묻는 질문</h1>
+        <div class="d-flex justify-content-center align-items-center">
+          <h1 class="hero-heading mb-1">자주 묻는 질문</h1>
         </div>
-        <ol class="breadcrumb ps-0 fs-5 justify-content-center mt-5 mb-5">
+        <ol class="breadcrumb ps-0 fs-5 justify-content-center my-5">
           <li class="mx-5"><a href="2community-Q&A_notice.html">NOTICE</a></li>
           <li class="mx-5 fw-bold active border-bottom border-dark pb-1">FAQ</li>
           <li class="mx-5"><a href="2community-Q&A.html">Q&A</a></li>
         </ol>
       </div>
-      <div class="table-responsive">
+      <div class="table mb-4">
         <form action="#" method="get">
-          <div class="row px-4 mt-3 mb-5">
-            <div class="col-5 float-start align-items-center">
-              <p class="mb-3 mb-md-0 fs-5"><i class="fa fa-clipboard-list"></i>&nbsp총
-                게시글<strong>&nbsp&nbsp&nbsp12</strong> 개</p>
-            </div>
-            <div class="col-1 align-items-center">
-              <select class="form-select focus-shadow-0" name="categry" id="categry">
-                <option value="0" disabled hidden selected>구분</option>
-                <option value="1">제목</option>
-                <option value="2">작성자</option>
-              </select>
-            </div>
-            <div class="col-5">
-              <div class="input-label-absolute input-label-absolute-right">
-                <div class="label-absolute"><i class="fa fa-search"></i></div>
-                <input class="form-control pe-4" type="search" name="search" placeholder="검색어를 입력해주세요."
-                  id="form_search">
+          <div class="row px-4 mt-1">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="col-5 float-start align-items-center">
+                <p class="mb-3 mb-md-0 fs-5"><i class="fa fa-clipboard-list me-1"></i>&nbsp총
+                  게시글<strong>&nbsp&nbsp12</strong> 개</p>
               </div>
-            </div>
-            <div class="col-1 float-end">
-              <a class="btn btn-outline-muted float-end" href="2board_write.html">글쓰기</a>
+              <div class="d-flex">
+                <div class="me-2 align-items-center">
+                  <select class="form-select focus-shadow-0" name="categry" id="categry">
+                    <option value="0" disabled hidden selected>구분</option>
+                    <option value="1">제목</option>
+                    <option value="2">작성자</option>
+                  </select>
+                </div>
+                <div class="me-4">
+                  <div class="input-label-absolute input-label-absolute-right">
+                    <div class="label-absolute"><i class="fa fa-search"></i></div>
+                    <input class="form-control pe-5" type="search" name="search" placeholder="검색어를 입력해주세요."
+                      id="form_search">
+                  </div>
+                </div>
+                <div class="float-end">
+                  <a class="btn btn-primary float-end ps-3" href="2board_write.html"><i class="fa-pen fa me-1"></i>글쓰기</a>
+                </div>
+              </div>
             </div>
           </div>
         </form>
         <table class="table text-gray-800 table-striped table-hover">
           <tr class="no-hover no-stripe border-top">
-            <td class="py-4 text-center align-middle">No</td>
-            <td class="py-4 text-center align-middle" colspan="2">제목</td>
-            <td class="py-4 text-center align-middle">첨부파일</td>
-            <td class="py-4 text-center align-middle">작성자</td>
-            <td class="py-4 text-center align-middle">작성일</td>
+            <td class="py-4 text-center align-middle fw-bold text-gray-800">No</td>
+            <td class="py-4 text-center align-middle fw-bold text-gray-800" colspan="2">제목</td>
+            <td class="py-4 text-center align-middle fw-bold text-gray-800">첨부파일</td>
+            <td class="py-4 text-center align-middle fw-bold text-gray-800">작성자</td>
+            <td class="py-4 text-center align-middle fw-bold text-gray-800">작성일</td>
           </tr>
           <tr>
             <td class="py-4 text-center align-middle">1</td>
-            <td class="py-4 w-50 align-middle" colspan="2">
-              자주하는질문자주하는질문자주하는질문자주하는질문자주하는질문자주하는질문자주하는질문자주하는질문자주하는질문자주하는질문자주하는질문자주하는질문자주하는질문</td>
+            <td class="py-4 w-50 align-" colspan="2">
+              1 : 1문의 답변 시간은 어떻게 되나요?</td>
             <td class="py-4 text-center align-middle">
               <svg class="svg-icon svg-icon-sm text-danger">
                 <use xlink:href="#tag-1"> </use>
@@ -163,7 +172,7 @@
           <tr>
             <td class="py-4 text-center align-middle">2</td>
             <td class="py-4 w-50 align-middle" colspan="2">
-              자주하는질문자주하는질문자주하는질문자주하는질문자주하는질문자주하는질문자주하는질문자주하는질문자주하는질문자주하는질문자주하는질문자주하는질문자주하는질문</td>
+              비밀번호가 기억나지 않아요</td>
             <td class="py-4 text-center align-middle">
               <svg class="svg-icon svg-icon-sm text-danger">
                 <use xlink:href="#tag-1"> </use>
@@ -175,7 +184,7 @@
           <tr>
             <td class="py-4 text-center align-middle">3</td>
             <td class="py-4 w-50 align-middle" colspan="2">
-              자주하는질문자주하는질문자주하는질문자주하는질문자주하는질문자주하는질문자주하는질문자주하는질문자주하는질문자주하는질문자주하는질문자주하는질문자주하는질문</td>
+              전화 상담시간이 궁금해요</td>
             <td class="py-4 text-center align-middle">
               <svg class="svg-icon svg-icon-sm text-danger">
                 <use xlink:href="#tag-1"> </use>
@@ -187,7 +196,7 @@
           <tr>
             <td class="py-4 text-center align-middle">4</td>
             <td class="py-4 w-50 align-middle" colspan="2">
-              자주하는질문자주하는질문자주하는질문자주하는질문자주하는질문자주하는질문자주하는질문자주하는질문자주하는질문자주하는질문자주하는질문자주하는질문자주하는질문</td>
+              후기 게시판에 사진이 안올라가요</td>
             <td class="py-4 text-center align-middle">
               <svg class="svg-icon svg-icon-sm text-danger">
                 <use xlink:href="#tag-1"> </use>
@@ -199,7 +208,7 @@
           <tr>
             <td class="py-4 text-center align-middle">5</td>
             <td class="py-4 w-50 align-middle" colspan="2">
-              자주하는질문자주하는질문자주하는질문자주하는질문자주하는질문자주하는질문자주하는질문자주하는질문자주하는질문자주하는질문자주하는질문자주하는질문자주하는질문</td>
+              회원정보 수정 or 탈퇴 하고 싶어요</td>
             <td class="py-4 text-center align-middle">
               <svg class="svg-icon svg-icon-sm text-danger">
                 <use xlink:href="#tag-1"> </use>
