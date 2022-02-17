@@ -38,10 +38,10 @@
 </head>
 
 <body style="padding-top: 72px;">
-  <header class="header">     
+  <header class="header">
     <!-- 내브바 -->
     <nav class="navbar navbar-expand-lg fixed-top shadow navbar-light bg-white">
-      <div class="container"> 
+      <div class="container">
         <div class="d-flex align-items-center">
           <a class="navbar-brand py-1" href="index.html">
             <img src="img/logo/logo_name.png" alt="Directory logo" class="w-6rem" />
@@ -60,26 +60,31 @@
                 <i class="fa fa-search"></i>
                 <span class="sr-only">What are you looking for?</span>
               </label>
-              <input class="form-control form-control-sm border-0 shadow-0 bg-gray-200" id="searchcollapsed_search" placeholder="Search" aria-label="Search" type="search" />
+              <input class="form-control form-control-sm border-0 shadow-0 bg-gray-200" id="searchcollapsed_search"
+                placeholder="Search" aria-label="Search" type="search" />
             </div>
           </form>
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link fs-6" id="docsDropdownMenuLink" href="index.html" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">산림</a>
+              <a class="nav-link fs-6" id="docsDropdownMenuLink" href="index.html" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">산림</a>
               <div class="dropdown-menu dropdown-menu-end" aria-labelledby="docsDropdownMenuLink"></div>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle fs-6" id="docsDropdownMenuLink" href="index.html" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">둘레길/자전거길</a>
+              <a class="nav-link dropdown-toggle fs-6" id="docsDropdownMenuLink" href="index.html"
+                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">둘레길/자전거길</a>
               <div class="dropdown-menu dropdown-menu-end" aria-labelledby="docsDropdownMenuLink">
                 <a class="dropdown-item" href="docs/docs-introduction.html">둘레길</a>
                 <a class="dropdown-item" href="docs/docs-directory-structure.html">자전거길</a>
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-6" id="docsDropdownMenuLink" href="index.html" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">휴양림</a>
+              <a class="nav-link fs-6" id="docsDropdownMenuLink" href="index.html" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">휴양림</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle fs-6" id="docsDropdownMenuLink" href="index.html" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">커뮤니티</a>
+              <a class="nav-link dropdown-toggle fs-6" id="docsDropdownMenuLink" href="index.html"
+                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">커뮤니티</a>
               <div class="dropdown-menu dropdown-menu-end" aria-labelledby="docsDropdownMenuLink">
                 <a class="dropdown-item" href="docs/docs-introduction.html">방문후기</a>
                 <a class="dropdown-item" href="docs/docs-directory-structure.html">자유게시판</a>
@@ -109,20 +114,25 @@
   <section class="py-5">
     <form class="container">
       <div class="row">
-        <div class="col-lg-7 col-xl-6 px-4 pb-4 ps-xl-5 pe-xl-5">
-          <div class="text-block mb-2">
-            <div class="col-xl-7 col-md-4 mb-4">
-              <div class="input-label-absolute input-label-absolute-right">
-                <div class="label-absolute"><i class="fa fa-search"></i></div>
-                <input class="form-control pe-4" type="search" name="search" placeholder="등산로명을 입력해주세요"
-                  id="form_search">
+        <div class="col-lg-7 col-xl-6 px-4 pb-4 ps-xl-4 pe-xl-4">
+          <div class="text-block">
+            <div class="d-flex">
+              <div class="col-xl-10 col-md-4 mb-5 me-2">
+                <div class="input-label-absolute input-label-absolute-right">
+                  <div class="label-absolute"><i class="fa fa-search"></i></div>
+                  <input class="form-control pe-4" type="search" name="search" placeholder="등산로명을 입력해주세요"
+                    id="form_search">
+                </div>
+              </div>
+              <div class="float-end">
+                <button class="btn btn-primary px-3" type="submit">검색</button>
               </div>
             </div>
-            <div class="d-flex justify-content-between align-items-center flex-column flex-md-row mb-4">
+            <div class="d-flex justify-content-between align-items-center flex-column flex-md-row">
               <div class="me-3">
-                <p class="mb-3 mb-md-0"><strong>12</strong> results found</p>
+                <p class=" mb-md-0"><strong>12</strong> results found</p>
               </div>
-              <div>
+              <div class="me-2">
                 <label class="form-label me-2" for="form_sort">Sort by</label>
                 <select class="selectpicker" name="sort" id="form_sort" data-style="btn-selectpicker" title="">
                   <option value="sortBy_0">오름차순 </option>
@@ -132,23 +142,24 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-9 ps-lg-5 offcanvas-body" style="overflow : auto; width:35rem; height: 50rem;">
-            <div class="text-block">
+          <div class="offcanvas-body mt-3" style="overflow :auto; width:38rem; height: 50rem;">
+            <div class="text-block pb-lg-4">
               <div class="row">
-                <div class="d-flex d-block d-sm-flex">
-                  <div class="text-md-center flex-shrink-0 me-2 me-xl-5">
+                <div class="d-flex d-sm-flex align-items-center">
+                  <div class="flex-shrink-0 me-4 me-xl-4">
                     <a href="#">
-                      <img class="d-block avatar avatar-xl p-2 mb-2 rounded-5" src="img/top100/마니산2.jpg">
+                      <img class="avatar avatar-xl p-1 rounded-5" src="img/top100/마니산2.jpg">
                     </a>
-                    <span class="text-uppercase text-muted text-sm"></span>
                   </div>
-                  <div>
-                    <h5 class="mt-2 mb-auto">금평리 구간</h5><br>
+                  <div class="mx-xl-2">
+                    <h5 class="mb-0">금평리 구간</h5><br>
                     <p class="text-muted">전라북도 남원시, 전라남도 구례군, 경상남도 하동군ㆍ산청군ㆍ함양군</p>
-                    <button class="btn btn-outline-primary" style="float: right;" type="button"
-                      data-bs-toggle="collapse" data-bs-target="#leaveReview" aria-expanded="false"
-                      aria-controls="leaveReview">리뷰</button>
-                    <p class="text-muted text-sm">리뷰 : 21개</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="text-muted text-sm">리뷰 : 21개</div>
+                      <button class="btn btn-outline-primary me-1 text-xs py-2 px-2" style="float: right;" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#leaveReview" aria-expanded="false"
+                        aria-controls="leaveReview"><i class="fa-pen fa ms-1"></i>리뷰</button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -157,7 +168,7 @@
                   <div class="row">
                     <div class="col-sm-6">
                       <div class="mb-4">
-                        <label class="form-label" for="rating">Your rating *</label>
+                        <label class="form-label" for="rating">별점</label>
                         <select class="form-select focus-shadow-0" name="rating" id="rating">
                           <option value="5">&#9733;&#9733;&#9733;&#9733;&#9733; (5/5)</option>
                           <option value="4">&#9733;&#9733;&#9733;&#9733;&#9734; (4/5)</option>
@@ -169,14 +180,14 @@
                     </div>
                   </div>
                   <div class="mb-4">
-                    <label class="form-label" for="review">Review text *</label>
-                    <textarea class="form-control" rows="4" name="review" id="review" placeholder="Enter your review"
+                    <label class="form-label" for="review">리뷰</label>
+                    <textarea class="form-control" rows="4" name="review" id="review" placeholder="리뷰를 작성해주세요"
                       required="required"></textarea>
                   </div>
-                  <button class="btn btn-primary" type="submit">Post review</button>
+                  <button class="btn btn-primary" type="submit">등록하기</button>
                   <div class="d-flex d-block d-sm-flex review">
                     <div>
-                      <h6 class="mt-2 mb-1">이동혁</h6>
+                      <h6 class="mt-2 mb-0">이동혁</h6>
                       <div class="mb-2"><i class="fa fa-xs fa-star text-primary"></i><i
                           class="fa fa-xs fa-star text-primary"></i><i class="fa fa-xs fa-star text-primary"></i><i
                           class="fa fa-xs fa-star text-primary"></i><i class="fa fa-xs fa-star text-primary"></i>
@@ -186,7 +197,7 @@
                   </div>
                   <div class="d-flex d-block d-sm-flex review">
                     <div>
-                      <h6 class="mt-2 mb-1">이동수</h6>
+                      <h6 class="mt-2 mb-0">이동수</h6>
                       <div class="mb-2"><i class="fa fa-xs fa-star text-primary"></i><i
                           class="fa fa-xs fa-star text-primary"></i><i class="fa fa-xs fa-star text-primary"></i><i
                           class="fa fa-xs fa-star text-primary"></i><i class="fa fa-xs fa-star text-primary"></i>
@@ -197,63 +208,65 @@
                 </form>
               </div>
             </div>
-
-            <div class="text-block">
+            <div class="text-block py-lg-4">
               <div class="row">
-                <div class="d-flex d-block d-sm-flex">
-                  <div class="text-md-center flex-shrink-0 me-4 me-xl-5">
+                <div class="d-flex d-sm-flex align-items-center">
+                  <div class="flex-shrink-0 me-4 me-xl-4">
                     <a href="#">
-                      <img class="d-block avatar avatar-xl p-2 mb-2 rounded-5" src="img/top100/가지산4.jpg">
+                      <img class="avatar avatar-xl p-1 rounded-5" src="img/top100/가지산4.jpg">
                     </a>
-                    <span class="text-uppercase text-muted text-sm"></span>
                   </div>
-                  <div>
-                    <h5 class="mt-2 mb-1">금평리 구간</h5><br>
-                    <p class="text-muted ">전라북도 남원시, 전라남도 구례군, 경상남도 하동군ㆍ산청군ㆍ함양군</p>
-                    <button class="btn btn-outline-primary" style="float: right;" type="button"
-                      data-bs-toggle="collapse" data-bs-target="#leaveReview" aria-expanded="false"
-                      aria-controls="leaveReview">리뷰</button>
-                    <p class="text-muted text-sm">리뷰 : 21개</p>
+                  <div class="mx-xl-2">
+                    <h5 class="mb-0">금평리 구간</h5><br>
+                    <p class="text-muted">전라북도 남원시, 전라남도 구례군, 경상남도 하동군ㆍ산청군ㆍ함양군</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="text-muted text-sm">리뷰 : 21개</div>
+                      <button class="btn btn-outline-primary me-1 text-xs py-2 px-2" style="float: right;" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#leaveReview" aria-expanded="false"
+                        aria-controls="leaveReview"><i class="fa-pen fa ms-1"></i>리뷰</button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="text-block">
+            <div class="text-block py-lg-4">
               <div class="row">
-                <div class="d-flex d-block d-sm-flex ">
-                  <div class="text-md-center flex-shrink-0 me-4 me-xl-5">
+                <div class="d-flex d-sm-flex align-items-center">
+                  <div class="flex-shrink-0 me-4 me-xl-4">
                     <a href="#">
-                      <img class="d-block avatar avatar-xl p-2 mb-2 rounded-5" src="img/top100/금오산2.jpg">
+                      <img class="avatar avatar-xl p-1 rounded-5" src="img/top100/금오산2.jpg">
                     </a>
-                    <span class="text-uppercase text-muted text-sm"></span>
                   </div>
-                  <div>
-                    <h5 class="mt-2 mb-1">금평리 구간</h5><br>
-                    <p class="text-muted ">전라북도 남원시, 전라남도 구례군, 경상남도 하동군ㆍ산청군ㆍ함양군</p>
-                    <button class="btn btn-outline-primary" style="float: right;" type="button"
-                      data-bs-toggle="collapse" data-bs-target="#leaveReview" aria-expanded="false"
-                      aria-controls="leaveReview">리뷰</button>
-                    <p class="text-muted text-sm">리뷰 : 21개</p>
+                  <div class="mx-xl-2">
+                    <h5 class="mb-0">금평리 구간</h5><br>
+                    <p class="text-muted">전라북도 남원시, 전라남도 구례군, 경상남도 하동군ㆍ산청군ㆍ함양군</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="text-muted text-sm">리뷰 : 21개</div>
+                      <button class="btn btn-outline-primary me-1 text-xs py-2 px-2" style="float: right;" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#leaveReview" aria-expanded="false" aria-controls="leaveReview"><i
+                          class="fa-pen fa ms-1"></i>리뷰</button>
+                      </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="text-block">
+            <div class="text-block py-lg-4">
               <div class="row">
-                <div class="d-flex d-block d-sm-flex ">
-                  <div class="text-md-center flex-shrink-0 me-4 me-xl-5">
+                <div class="d-flex d-sm-flex align-items-center">
+                  <div class="flex-shrink-0 me-4 me-xl-4">
                     <a href="#">
-                      <img class="d-block avatar avatar-xl p-2 mb-2 rounded-5" src="img/top100/내연산3.jpg">
+                      <img class="avatar avatar-xl p-1 rounded-5" src="img/top100/내연산3.jpg">
                     </a>
-                    <span class="text-uppercase text-muted text-sm"></span>
                   </div>
-                  <div>
-                    <h5 class="mt-2 mb-1">금평리 구간</h5><br>
-                    <p class="text-muted ">전라북도 남원시, 전라남도 구례군, 경상남도 하동군ㆍ산청군ㆍ함양군</p>
-                    <button class="btn btn-outline-primary" style="float: right;" type="button"
-                      data-bs-toggle="collapse" data-bs-target="#leaveReview" aria-expanded="false"
-                      aria-controls="leaveReview">리뷰</button>
-                    <p class="text-muted text-sm">리뷰 : 21개</p>
+                  <div class="mx-xl-2">
+                    <h5 class="mb-0">금평리 구간</h5><br>
+                    <p class="text-muted">전라북도 남원시, 전라남도 구례군, 경상남도 하동군ㆍ산청군ㆍ함양군</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="text-muted text-sm">리뷰 : 21개</div>
+                      <button class="btn btn-outline-primary me-1 text-xs py-2 px-2" style="float: right;" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#leaveReview" aria-expanded="false" aria-controls="leaveReview"><i
+                          class="fa-pen fa ms-1"></i>리뷰</button>
+                      </div>
                   </div>
                 </div>
               </div>
