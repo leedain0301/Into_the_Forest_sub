@@ -110,6 +110,37 @@
       <p class="text-lg text-shadow">홈 - 산림</p>
     </div>
   </section>
+
+<script> 
+  function checkSelectAll() {
+    // 전체 체크박스
+    const checkboxes
+      = document.querySelectorAll('input[name="city"]');
+    // 선택된 체크박스
+    const checked
+      = document.querySelectorAll('input[name="city"]:checked');
+    // select all 체크박스
+    const selectAll
+      = document.querySelector('input[name="cityAll"]');
+
+    if (checkboxes.length === checked.length) {
+      selectAll.checked = true;
+    } else {
+      selectAll.checked = false;
+    }
+  }
+
+  function selectAll(selectAll) {
+    const checkboxes
+      = document.getElementsByName('city');
+
+    checkboxes.forEach((checkbox) => {
+      checkbox.checked = selectAll.checked
+    })
+  }
+</script>
+
+
   <!-- 메인 -->
   <section class="py-5">
     <div class="container">
@@ -123,44 +154,104 @@
                   <ul class="list-inline mb-2">
                     <li class="list-inline-item">
                       <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="cuisine_0" name="cuisine[]">
+                        <input class="form-check-input" type="checkbox" id="cityAll" name="cityAll" onclick='selectAll(this)' checked>
                         <label class="form-check-label" for="cuisine_0">전국</label>
                       </div>
                     </li>
                     <li class="list-inline-item">
                       <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="cuisine_1" name="cuisine[]">
-                        <label class="form-check-label" for="cuisine_1">강원도</label>
+                        <input class="form-check-input" type="checkbox" id="city" name="city" onclick='checkSelectAll()'>
+                        <label class="form-check-label" for="cuisine_1">서울특별시</label>
                       </div>
                     </li>
                     <li class="list-inline-item">
                       <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="cuisine_1" name="cuisine[]">
+                        <input class="form-check-input" type="checkbox" id="city" name="city" onclick='checkSelectAll()'>
                         <label class="form-check-label" for="cuisine_1">경기도</label>
                       </div>
                     </li>
                     <li class="list-inline-item">
                       <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="cuisine_1" name="cuisine[]">
-                        <label class="form-check-label" for="cuisine_1">경상도</label>
+                        <input class="form-check-input" type="checkbox" id="city" name="city" onclick='checkSelectAll()'>
+                        <label class="form-check-label" for="cuisine_1">강원도</label>
                       </div>
                     </li>
                     <li class="list-inline-item">
                       <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="cuisine_1" name="cuisine[]">
-                        <label class="form-check-label" for="cuisine_1">전라도</label>
-                      </div>
-                    </li>
-                    <li class="list-inline-item">
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="cuisine_1" name="cuisine[]">
+                        <input class="form-check-input" type="checkbox" id="city" name="city" onclick='checkSelectAll()'>
                         <label class="form-check-label" for="cuisine_1">제주도</label>
                       </div>
                     </li>
                     <li class="list-inline-item">
                       <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="cuisine_1" name="cuisine[]">
-                        <label class="form-check-label" for="cuisine_1">충청도</label>
+                        <input class="form-check-input" type="checkbox" id="city" name="city" onclick='checkSelectAll()'>
+                        <label class="form-check-label" for="cuisine_1">세종특별자치시</label>
+                      </div>
+                    </li>
+                    <li class="list-inline-item">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="city" name="city" onclick='checkSelectAll()'>
+                        <label class="form-check-label" for="cuisine_1">경상남도</label>
+                      </div>
+                    </li>
+                    <li class="list-inline-item">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="city" name="city" onclick='checkSelectAll()'>
+                        <label class="form-check-label" for="cuisine_1">경상북도</label>
+                      </div>
+                    </li>
+                    <li class="list-inline-item">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="city" name="city" onclick='checkSelectAll()'>
+                        <label class="form-check-label" for="cuisine_1">전라남도</label>
+                      </div>
+                    </li>
+                    <li class="list-inline-item">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="city" name="city" onclick='checkSelectAll()'>
+                        <label class="form-check-label" for="cuisine_1">전라북도</label>
+                      </div>
+                    </li>
+                    <li class="list-inline-item">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="city" name="city" onclick='checkSelectAll()'>
+                        <label class="form-check-label" for="cuisine_0">충청남도</label>
+                      </div>
+                    </li>
+                    <li class="list-inline-item">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="city" name="city" onclick='checkSelectAll()'>
+                        <label class="form-check-label" for="cuisine_1">충청북도</label>
+                      </div>
+                    </li>
+                    <li class="list-inline-item">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="city" name="city" onclick='checkSelectAll()'>
+                        <label class="form-check-label" for="cuisine_1">인천광역시</label>
+                      </div>
+                    </li>
+                    <li class="list-inline-item">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="city" name="city" onclick='checkSelectAll()'>
+                        <label class="form-check-label" for="cuisine_1">광주광역시</label>
+                      </div>
+                    </li>
+                    <li class="list-inline-item">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="city" name="city" onclick='checkSelectAll()'>
+                        <label class="form-check-label" for="cuisine_1">대구광역시</label>
+                      </div>
+                    </li>
+                    <li class="list-inline-item">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="city" name="city" onclick='checkSelectAll()'>
+                        <label class="form-check-label" for="cuisine_1">대전광역시</label>
+                      </div>
+                    </li>
+                    <li class="list-inline-item">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="city" name="city" onclick='checkSelectAll()'>
+                        <label class="form-check-label" for="cuisine_1">울산광역시</label>
                       </div>
                     </li>
                   </ul>
@@ -169,11 +260,11 @@
                   <label class="form-label">높이 설정</label>
                   <div class="text-primary" id="slider-snap"></div>
                   <div class="nouislider-values">
-                    <div class="min"><span id="slider-snap-value-from"></span>km</div>
-                    <div class="max"><span id="slider-snap-value-to"></span>km</div>
+                    <div class="min"><span id="slider-snap-value-from"></span>m</div>
+                    <div class="max"><span id="slider-snap-value-to"></span>m</div>
                   </div>
                   <input type="hidden" name="pricefrom" id="slider-snap-input-from" value="0">
-                  <input type="hidden" name="priceto" id="slider-snap-input-to" value="1000">
+                  <input type="hidden" name="priceto" id="slider-snap-input-to" value="10000">
                 </div>
               </div>
               <div class="d-flex">
@@ -193,15 +284,14 @@
           <br>
           <div class="d-flex justify-content-between align-items-center flex-column flex-md-row mb-4 pe-xl-5 ps-xl-3">
             <div class="me-3">
-              <p class="mb-3 mb-md-0"><strong>12</strong> results found</p>
+              <p class="mb-3 mb-md-0">결과 <strong>12</strong> 개</p>
             </div>
             <div>
-              <label class="form-label me-2" for="form_sort">Sort by</label>
+              <label class="form-label me-2" for="form_sort">정렬</label>
               <select class="selectpicker" name="sort" id="form_sort" data-style="btn-selectpicker" title="">
                 <option value="sortBy_0">이름순 </option>
                 <option value="sortBy_1">높이순 </option>
                 <option value="sortBy_2">명산만 보기 </option>
-                <option value="sortBy_3">명산 top 100 </option>
               </select>
             </div>
           </div>
@@ -486,13 +576,13 @@
     var snapSlider = document.getElementById('slider-snap');
 
     noUiSlider.create(snapSlider, {
-      start: [0, 1000],
+      start: [0, 10000],
       snap: false,
       connect: true,
       step: 1,
       range: {
         'min': 0,
-        'max': 1000
+        'max': 10000
       }
     });
     var snapValues = [
@@ -508,6 +598,7 @@
       inputValues[handle].value = values[handle];
     })
   </script>
+
 </body>
 
 </html>
